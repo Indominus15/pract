@@ -1,0 +1,37 @@
+[Info  - 7:07:47 PM] (981) Pylance language server 2023.3.20 (pyright 93a4ef87) starting
+[Info  - 7:07:47 PM] (981) Server root directory: /home/admin/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist
+[Info  - 7:07:47 PM] (981) Starting service instance "home"
+[Info  - 7:07:47 PM] (981) Auto-indent enabled
+[Info  - 7:07:47 PM] (981) Starting service instance "<default>"
+[Info  - 7:07:47 PM] (981) No pyproject.toml file found.
+[Info  - 7:07:47 PM] (981) Setting pythonPath for service "<default>": "/bin/python3"
+[Warn  - 7:07:47 PM] (981) stubPath typings is not a valid directory.
+[Info  - 7:07:47 PM] (981) Assuming Python version 3.7
+[Info  - 7:07:47 PM] (981) Assuming Python platform Linux
+[Info  - 7:07:47 PM] (981) Searching for source files
+[Info  - 7:07:47 PM] (981) No source files found.
+[Info  - 7:07:47 PM] (981) No configuration file found.
+[Info  - 7:07:47 PM] (981) No pyproject.toml file found.
+[Info  - 7:07:47 PM] (981) Setting pythonPath for service "home": "/bin/python3"
+[Warn  - 7:07:47 PM] (981) stubPath /home/typings is not a valid directory.
+[Info  - 7:07:47 PM] (981) Assuming Python version 3.7
+[Info  - 7:07:47 PM] (981) Assuming Python platform Linux
+[Info  - 7:07:47 PM] (981) Searching for source files
+[Info  - 7:07:47 PM] (981) Found 4395 source files
+[Info  - 7:07:48 PM] (981) Background analysis(1) root directory: /home/admin/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist
+[Info  - 7:07:48 PM] (981) Background analysis(1) started
+[Info  - 7:07:48 PM] (981) Background analysis(2) root directory: /home/admin/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist
+[Info  - 7:07:48 PM] (981) Background analysis(2) started
+[Info  - 7:07:48 PM] (981) No pyproject.toml file found.
+[Info  - 7:07:48 PM] (981) Setting pythonPath for service "<default>": "/bin/python3"
+[Warn  - 7:07:48 PM] (981) stubPath typings is not a valid directory.
+[Info  - 7:07:48 PM] (981) Assuming Python version 3.7
+[Info  - 7:07:48 PM] (981) Assuming Python platform Linux
+[Info  - 7:07:48 PM] (981) Searching for source files
+[Info  - 7:07:48 PM] (981) No source files found.
+[Info  - 7:07:48 PM] (981) Indexer background runner(3) root directory: /home/admin/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist (index)
+[Info  - 7:07:48 PM] (981) Indexing(3) started
+[Info  - 7:07:48 PM] (981) scanned(3) 22 files over 1 exec env
+[Info  - 7:07:48 PM] (981) indexed(3) 10 files over 1 exec env
+[Info  - 7:07:48 PM] (981) Indexing finished(3).
+[Warn  - 7:07:50 PM] (981) Workspace indexing has hit its upper limit: 2000 files

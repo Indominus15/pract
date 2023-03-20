@@ -1,0 +1,12 @@
+Visual Studio Code (1.76.2, ssh-remote, desktop)
+Jupyter Extension Version: 2023.2.1200692131.
+Python Extension Version: 2023.4.1.
+Workspace folder /home
+El usuario pertenece al grupo de experimentos 'jupyterEnhancedDataViewer'
+El usuario pertenece al grupo de experimentos 'jupyterTest'
+info 07:05:53.994: LSP Notebooks experiment is enabled
+warn 07:05:54.409: Failed to get activated env vars with python /bin/python3 in 196ms
+info 07:05:54.415: Process Execution: > /bin/python3 -c "import site;print("USER_BASE_VALUE");print(site.USER_SITE);print("USER_BASE_VALUE");"
+> /bin/python3 -c "import site;print("USER_BASE_VALUE");print(site.USER_SITE);print("USER_BASE_VALUE");"
+info 07:05:54.429: Process Execution: > /bin/python3 -m pip list
+> /bin/python3 -m pip list

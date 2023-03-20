@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "window.zoomLevel": 1,
+    "[python]": {
+        "editor.formatOnType": true
+    }
+}

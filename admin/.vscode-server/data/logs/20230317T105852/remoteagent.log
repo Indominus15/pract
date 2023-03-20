@@ -1,0 +1,83 @@
+2023-03-17 10:58:52.724 [info] 
+
+
+
+
+2023-03-17 10:58:52.740 [info] Extension host agent started.
+2023-03-17 10:58:52.780 [info] [127.0.0.1][bde03d0c][ManagementConnection] New connection established.
+2023-03-17 10:58:52.789 [info] [127.0.0.1][d6fa8232][ExtensionHostConnection] New connection established.
+2023-03-17 10:58:52.792 [info] [127.0.0.1][d6fa8232][ExtensionHostConnection] <890> Launched Extension Host Process.
+2023-03-17 11:03:52.742 [info] New EH opened, aborting shutdown
+2023-03-17 12:36:38.872 [info] Getting Manifest... ms-python.python
+2023-03-17 12:36:38.941 [info] Installing extension: ms-python.python
+2023-03-17 12:36:39.580 [info] Getting Manifest... ms-toolsai.jupyter
+2023-03-17 12:36:40.176 [info] Getting Manifest... ms-toolsai.jupyter-keymap
+2023-03-17 12:36:40.220 [info] Getting Manifest... ms-toolsai.jupyter-renderers
+2023-03-17 12:36:40.268 [info] Getting Manifest... ms-toolsai.vscode-jupyter-cell-tags
+2023-03-17 12:36:40.317 [info] Getting Manifest... ms-toolsai.vscode-jupyter-slideshow
+2023-03-17 12:36:40.370 [info] Getting Manifest... ms-python.vscode-pylance
+2023-03-17 12:36:40.462 [info] Installing extension: ms-toolsai.jupyter ms-python.python
+2023-03-17 12:36:40.462 [info] Installing extension: ms-toolsai.jupyter-keymap ms-python.python
+2023-03-17 12:36:40.462 [info] Installing extension: ms-toolsai.jupyter-renderers ms-python.python
+2023-03-17 12:36:40.463 [info] Installing extension: ms-toolsai.vscode-jupyter-cell-tags ms-python.python
+2023-03-17 12:36:40.463 [info] Installing extension: ms-toolsai.vscode-jupyter-slideshow ms-python.python
+2023-03-17 12:36:40.463 [info] Installing extension: ms-python.vscode-pylance ms-python.python
+2023-03-17 12:36:41.528 [info] Extension signature verification: ms-toolsai.vscode-jupyter-slideshow. Verification status: Verified.
+2023-03-17 12:36:41.529 [info] Extension signature verification: ms-toolsai.jupyter-keymap. Verification status: Verified.
+2023-03-17 12:36:41.549 [info] Extracted extension to /home/admin/.vscode-server/extensions/.d07d1c59-46c4-4ea2-899a-62ca534fe4ea: ms-toolsai.jupyter-keymap
+2023-03-17 12:36:41.555 [info] Extracted extension to /home/admin/.vscode-server/extensions/.5420c143-4200-4809-9282-5654e6e571a9: ms-toolsai.vscode-jupyter-slideshow
+2023-03-17 12:36:41.557 [info] Renamed to /home/admin/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.0
+2023-03-17 12:36:41.558 [info] Extension signature verification: ms-toolsai.vscode-jupyter-cell-tags. Verification status: Verified.
+2023-03-17 12:36:41.558 [info] Extracting extension completed. ms-toolsai.jupyter-keymap
+2023-03-17 12:36:41.559 [info] Renamed to /home/admin/.vscode-server/extensions/ms-toolsai.vscode-jupyter-slideshow-0.1.5
+2023-03-17 12:36:41.562 [info] Extracting extension completed. ms-toolsai.vscode-jupyter-slideshow
+2023-03-17 12:36:41.582 [info] Extracted extension to /home/admin/.vscode-server/extensions/.a9d083b4-2141-4cce-9d69-bea3f040f350: ms-toolsai.vscode-jupyter-cell-tags
+2023-03-17 12:36:41.584 [info] Renamed to /home/admin/.vscode-server/extensions/ms-toolsai.vscode-jupyter-cell-tags-0.1.7
+2023-03-17 12:36:41.584 [info] Extracting extension completed. ms-toolsai.vscode-jupyter-cell-tags
+2023-03-17 12:36:42.011 [info] Extension signature verification: ms-toolsai.jupyter-renderers. Verification status: Verified.
+2023-03-17 12:36:42.087 [info] Extension signature verification: ms-toolsai.jupyter. Verification status: Verified.
+2023-03-17 12:36:42.196 [info] Extracted extension to /home/admin/.vscode-server/extensions/.42cdbfc0-9d31-4f4f-b2d5-f0ac9beae657: ms-toolsai.jupyter-renderers
+2023-03-17 12:36:42.199 [info] Renamed to /home/admin/.vscode-server/extensions/ms-toolsai.jupyter-renderers-1.0.15
+2023-03-17 12:36:42.200 [info] Extracting extension completed. ms-toolsai.jupyter-renderers
+2023-03-17 12:36:42.326 [info] Extracted extension to /home/admin/.vscode-server/extensions/.217bbe0f-2a4c-469b-896c-5f5a50533fba: ms-toolsai.jupyter
+2023-03-17 12:36:42.331 [info] Renamed to /home/admin/.vscode-server/extensions/ms-toolsai.jupyter-2023.2.1200692131
+2023-03-17 12:36:42.335 [info] Extracting extension completed. ms-toolsai.jupyter
+2023-03-17 12:36:42.390 [info] Extension signature verification: ms-python.python. Verification status: Verified.
+2023-03-17 12:36:43.083 [info] Extracted extension to /home/admin/.vscode-server/extensions/.75c34cdc-9eea-42bd-9d43-bc65b30ce0ed: ms-python.python
+2023-03-17 12:36:43.090 [info] Renamed to /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1
+2023-03-17 12:36:43.093 [info] Extracting extension completed. ms-python.python
+2023-03-17 12:36:44.266 [info] Extension signature verification: ms-python.vscode-pylance. Verification status: Verified.
+2023-03-17 12:36:45.131 [info] Extracted extension to /home/admin/.vscode-server/extensions/.382e2160-fe25-4c30-b182-3aee9a4974d0: ms-python.vscode-pylance
+2023-03-17 12:36:45.141 [info] Renamed to /home/admin/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20
+2023-03-17 12:36:45.145 [info] Extracting extension completed. ms-python.vscode-pylance
+2023-03-17 12:36:45.150 [info] Extension installed successfully: ms-toolsai.jupyter-keymap
+2023-03-17 12:36:45.150 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-slideshow
+2023-03-17 12:36:45.150 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-cell-tags
+2023-03-17 12:36:45.150 [info] Extension installed successfully: ms-toolsai.jupyter-renderers
+2023-03-17 12:36:45.150 [info] Extension installed successfully: ms-toolsai.jupyter
+2023-03-17 12:36:45.150 [info] Extension installed successfully: ms-python.python
+2023-03-17 12:36:45.150 [info] Extension installed successfully: ms-python.vscode-pylance
+2023-03-17 13:34:55.869 [info] Getting Manifest... scapigliato.vsc-odoo-development
+2023-03-17 13:34:55.931 [info] Installing extension: scapigliato.vsc-odoo-development
+2023-03-17 13:34:57.211 [info] Extension signature verification: scapigliato.vsc-odoo-development. Verification status: Verified.
+2023-03-17 13:34:57.269 [info] Extracted extension to /home/admin/.vscode-server/extensions/.5c2086a7-b865-4995-bbdd-59352d30f1d6: scapigliato.vsc-odoo-development
+2023-03-17 13:34:57.274 [info] Renamed to /home/admin/.vscode-server/extensions/scapigliato.vsc-odoo-development-0.2.0
+2023-03-17 13:34:57.275 [info] Extracting extension completed. scapigliato.vsc-odoo-development
+2023-03-17 13:34:57.278 [info] Extension installed successfully: scapigliato.vsc-odoo-development
+2023-03-17 13:50:17.096 [error] CodeExpectedError: Could not find pty on pty host
+    at S.L (/home/admin/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:6849)
+    at S.acknowledgeDataEvent (/home/admin/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:3771)
+    at Object.call (/home/admin/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:17:5043)
+    at l.s (/home/admin/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at l.q (/home/admin/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /home/admin/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at n.invoke (/home/admin/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at E.deliver (/home/admin/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:2070)
+    at c.fire (/home/admin/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:1708)
+    at process.T (/home/admin/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:9:20949)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-03-17 13:50:21.278 [info] [127.0.0.1][bde03d0c][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-17 13:50:21.322 [info] [127.0.0.1][d6fa8232][ExtensionHostConnection] <890> Extension Host Process exited with code: 0, signal: null.
+2023-03-17 13:50:21.322 [info] Last EH closed, waiting before shutting down

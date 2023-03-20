@@ -1,0 +1,76 @@
+El experimento \"pythonPromptNewToolsExtNonExistantcf\" está activo
+LSP Notebooks experiment is enabled
+LSP Notebooks interactive window support is enabled
+> conda info --json
+Ruta de acceso del intérprete de Python: /bin/python3
+[ERROR 2023-2-20 7:5:54.230]: readdir() failed for "/home/usuario/.gnupg" (Error: EACCES: permission denied, scandir '/home/usuario/.gnupg')
+[ERROR 2023-2-20 7:5:54.230]: readdir() failed for "/home/usuario/.local" (Error: EACCES: permission denied, scandir '/home/usuario/.local')
+> /bin/python -I ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /bin/python3 -I ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-20 7:5:54.346]: Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+> /bin/python ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /usr/bin/python -I ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-20 7:5:54.402]: Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+> /usr/bin/python ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /usr/bin/python3 -I ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /usr/include/python3.7 -I ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-20 7:5:54.469]: [Error: Command failed: /usr/include/python3.7 -I /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+/bin/sh: 1: /usr/include/python3.7: Permission denied
+
+	at ChildProcess.exithandler (node:child_process:399:12)
+	at ChildProcess.emit (node:events:526:28)
+	at maybeClose (node:internal/child_process:1092:16)
+	at Socket.<anonymous> (node:internal/child_process:451:11)
+	at Socket.emit (node:events:526:28)
+	at Pipe.<anonymous> (node:net:687:12)] {
+  killed: false,
+  code: 126,
+  signal: null,
+  cmd: '/usr/include/python3.7 -I /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py'
+}
+> /usr/include/python3.7 -I ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-20 7:5:56.490]: [Error: Command failed: /usr/include/python3.7 -I /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+/bin/sh: 1: /usr/include/python3.7: Permission denied
+
+	at ChildProcess.exithandler (node:child_process:399:12)
+	at ChildProcess.emit (node:events:526:28)
+	at maybeClose (node:internal/child_process:1092:16)
+	at Socket.<anonymous> (node:internal/child_process:451:11)
+	at Socket.emit (node:events:526:28)
+	at Pipe.<anonymous> (node:net:687:12)] {
+  killed: false,
+  code: 126,
+  signal: null,
+  cmd: '/usr/include/python3.7 -I /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py'
+}
+> -I ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-20 7:5:56.537]: [Error: Command failed: -I /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+/bin/sh: 0: Illegal option - 
+
+	at ChildProcess.exithandler (node:child_process:399:12)
+	at ChildProcess.emit (node:events:526:28)
+	at maybeClose (node:internal/child_process:1092:16)
+	at Socket.<anonymous> (node:internal/child_process:451:11)
+	at Socket.emit (node:events:526:28)
+	at Pipe.<anonymous> (node:net:687:12)] {
+  killed: false,
+  code: 2,
+  signal: null,
+  cmd: '-I /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py'
+}
+Iniciando el servidor de lenguaje Pylance.
+> -I ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-20 7:5:58.544]: [Error: Command failed: -I /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+/bin/sh: 0: Illegal option - 
+
+	at ChildProcess.exithandler (node:child_process:399:12)
+	at ChildProcess.emit (node:events:526:28)
+	at maybeClose (node:internal/child_process:1092:16)
+	at Socket.<anonymous> (node:internal/child_process:451:11)
+	at Socket.emit (node:events:526:28)
+	at Pipe.<anonymous> (node:net:687:12)] {
+  killed: false,
+  code: 2,
+  signal: null,
+  cmd: '-I /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/admin/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py'
+}

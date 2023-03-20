@@ -1,0 +1,21 @@
+2023-03-17 19:07:42.128 [info] 
+
+
+
+
+2023-03-17 19:07:42.143 [info] Extension host agent started.
+2023-03-17 19:07:42.189 [info] [127.0.0.1][584c0989][ManagementConnection] New connection established.
+2023-03-17 19:07:42.198 [info] [127.0.0.1][230bd1e4][ExtensionHostConnection] New connection established.
+2023-03-17 19:07:42.210 [info] [127.0.0.1][230bd1e4][ExtensionHostConnection] <896> Launched Extension Host Process.
+2023-03-17 19:07:44.495 [info] Getting Manifest... ms-toolsai.vscode-jupyter-cell-tags
+2023-03-17 19:07:44.562 [info] Installing extension: ms-toolsai.vscode-jupyter-cell-tags
+2023-03-17 19:07:45.496 [info] Extension signature verification: ms-toolsai.vscode-jupyter-cell-tags. Verification status: Verified.
+2023-03-17 19:07:45.521 [info] Extracted extension to /home/admin/.vscode-server/extensions/.894d657a-beca-412e-bb3f-9d42c266fa93: ms-toolsai.vscode-jupyter-cell-tags
+2023-03-17 19:07:45.525 [info] Renamed to /home/admin/.vscode-server/extensions/ms-toolsai.vscode-jupyter-cell-tags-0.1.8
+2023-03-17 19:07:45.526 [info] Extracting extension completed. ms-toolsai.vscode-jupyter-cell-tags
+2023-03-17 19:07:45.532 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-cell-tags
+2023-03-17 19:07:45.534 [info] Marked extension as uninstalled ms-toolsai.vscode-jupyter-cell-tags-0.1.7
+2023-03-17 19:09:07.156 [info] [127.0.0.1][584c0989][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-17 19:09:07.181 [info] [127.0.0.1][230bd1e4][ExtensionHostConnection] <896> Extension Host Process exited with code: 0, signal: null.
+2023-03-17 19:09:07.181 [info] Cancelling previous shutdown timeout
+2023-03-17 19:09:07.181 [info] Last EH closed, waiting before shutting down

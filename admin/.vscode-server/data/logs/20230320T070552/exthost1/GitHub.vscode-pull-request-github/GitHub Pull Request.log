@@ -1,0 +1,6 @@
+2023-03-20 11:57:55.697 [warning] /home/admin/.ssh/config: ENOENT: no such file or directory, open '/home/admin/.ssh/config'
+2023-03-20 11:57:55.743 [info] TemporaryState> Error in initialization: No se puede eliminar el archivo inexistente 'vscode-remote://ssh-remote+10.0.3.85/home/admin/.vscode-server/data/User/globalStorage/github.vscode-pull-request-github/temp'
+2023-03-20 11:57:55.765 [info] Looking for git repository
+2023-03-20 11:57:55.766 [info] Found 0 repositories during activation
+2023-03-20 11:57:55.766 [info] Git repository found, initializing review manager and pr tree view.
+2023-03-20 11:57:55.766 [info] Registering git provider
