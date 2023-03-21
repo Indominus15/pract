@@ -1,0 +1,99 @@
+{
+	"name": "vscode-odoo",
+	"displayName": "Odoo",
+	"description": "Odoo Framework Integration for Visual Studio Code",
+	"version": "0.1.10",
+	"private": true,
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"author": {
+		"name": "Trịnh Anh Ngọc",
+		"email": "atw1990@gmail.com",
+		"url": "https://github.com/trinhanhngoc"
+	},
+	"publisher": "trinhanhngoc",
+	"homepage": "https://odoo-ide.com",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/odoo-ide/vscode-odoo"
+	},
+	"bugs": {
+		"url": "https://github.com/odoo-ide/vscode-odoo/issues"
+	},
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"keywords": [
+		"python",
+		"odoo"
+	],
+	"categories": [
+		"Programming Languages"
+	],
+	"activationEvents": [
+		"workspaceContains:odoo-bin",
+		"workspaceContains:__manifest__.py",
+		"workspaceContains:pyrightconfig.json"
+	],
+	"icon": "icon.png",
+	"main": "./dist/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "python",
+				"aliases": [
+					"Python"
+				],
+				"extensions": [
+					".py",
+					".pyi"
+				]
+			}
+		],
+		"commands": [],
+		"menus": {
+			"editor/context": [],
+			"commandPalette": []
+		},
+		"jsonValidation": [
+			{
+				"fileMatch": "pyrightconfig.json",
+				"url": "./schemas/pyrightconfig.schema.json"
+			}
+		]
+	},
+	"scripts": {
+		"clean": "shx rm -rf ./dist ./out",
+		"package": "vsce package",
+		"vscode:prepublish": "npm run webpack",
+		"webpack": "npm run clean && webpack --mode production --progress",
+		"webpack-dev": "npm run clean && webpack --mode development --progress"
+	},
+	"dependencies": {
+		"vscode-jsonrpc": "8.1.0-next.6",
+		"vscode-languageclient": "8.1.0-next.5",
+		"vscode-languageserver": "8.1.0-next.5",
+		"vscode-languageserver-protocol": "3.17.3-next.5"
+	},
+	"devDependencies": {
+		"@types/node": "^16.18.11",
+		"@types/vscode": "~1.74.0",
+		"@vscode/vsce": "^2.18.0",
+		"copy-webpack-plugin": "^11.0.0",
+		"shx": "^0.3.4",
+		"ts-loader": "^9.4.2",
+		"typescript": "~4.4.4",
+		"webpack": "^5.76.1",
+		"webpack-cli": "^5.0.1"
+	},
+	"__metadata": {
+		"id": "08349d7a-2975-474e-9280-510baeb96c0a",
+		"publisherId": "76573605-2696-4cc2-a0f6-fd8153d9a930",
+		"publisherDisplayName": "Trịnh Anh Ngọc",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1679395489073,
+		"preRelease": false
+	}
+}

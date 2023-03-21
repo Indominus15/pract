@@ -4,3 +4,5 @@ exit
 postgres
 psql 
 su admin
+/home/proyecto/version/odoo14/odoo/odoo-bin -c /home/proyecto/confi/odoo14-dev.conf 
+su usuario

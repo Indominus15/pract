@@ -10,3 +10,6 @@ info 07:05:54.415: Process Execution: > /bin/python3 -c "import site;print("USER
 > /bin/python3 -c "import site;print("USER_BASE_VALUE");print(site.USER_SITE);print("USER_BASE_VALUE");"
 info 07:05:54.429: Process Execution: > /bin/python3 -m pip list
 > /bin/python3 -m pip list
+info 13:55:17.350: Shutting down notebooks for 639980db-660f-4ad9-8587-102e1e452b12
+info 13:55:17.351: Disposing HostJupyterExecution 6d1e70ea-487b-4f76-a371-efac5531248c
+info 13:55:17.351: Disposing HostJupyterExecution 6d1e70ea-487b-4f76-a371-efac5531248c

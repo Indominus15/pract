@@ -1,0 +1,1054 @@
+{
+	"New - Security and Access Role": {
+		"prefix": "New - Security and Access Role",
+		"body": [
+			"$0<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<odoo>",
+			"	<data>",
+			"		<record model=\"ir.module.category\" id=\"module_${1:cafe}\">",
+			"			<field name=\"name\">Cafe</field>",
+			"			<field name=\"sequence\">1</field>",
+			"		</record>",
+			"",
+			"		<record model=\"res.groups\" id=\"group_${1:cafe}_user\">",
+			"			<field name=\"name\">Pegawai</field>",
+			"			<field name=\"category_id\" ref=\"module_${1:cafe}\"/>",
+			"			<field name=\"implied_ids\" eval=\"[(4, ref('base.group_user'))]\"/>",
+			"		</record>",
+			"",
+			"		<record model=\"res.groups\" id=\"group_${1:cafe}_manager\">",
+			"			<field name=\"name\">Manager</field>",
+			"			<field name=\"category_id\" ref=\"module_${1:cafe}\"/>",
+			"			<field name=\"implied_ids\" eval=\"[(4, ref('${2:nama_folder}.group_${1:cafe}_user'))]\"/>",
+			"		</record>",
+			"	</data>"
+			"</odoo>"
+		]
+	},
+	"New - Record Role": {
+		"prefix": "New - Record Role",
+		"body": [
+			"<record model=\"ir.rule\" id=\"${1:rule_produk_non_aktif}\">",
+			"	<field name=\"name\">${2:Produk Non Aktif}</field>",
+			"	<field name=\"model_id\" ref=\"cafe.model_cafe_produk\"/>",
+			"	<field name=\"domain_force\">[('is_aktif', '=', False)]</field>",
+			"	<field name=\"groups\" eval=\"[(4, ref('cafe_security.group_cafe_user'))]\"/>",
+			"</record>"
+		]
+	},
+	"New - Class 1": {
+		"prefix": "New - View (Standard)",
+		"body": [
+			"$0<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+			"<odoo>",
+			"	<data>",
+			"		<!-- List View -->",
+			"		<record model=\"ir.ui.view\" id=\"${1:nama_model}_tree\">",
+			"			<field name=\"name\">${2:nama.model}.tree</field>",
+			"			<field name=\"model\">${2:nama.model}</field>",
+			"			<field name=\"arch\" type=\"xml\">",
+			"				<tree>",
+			"					<field name=\"name\"/>",
+			"				</tree>",
+			"			</field>",
+			"		</record>",
+			"		",
+			"		<!-- Form View -->",
+			"		<record model=\"ir.ui.view\" id=\"${1:nama_model}_form\">",
+			"			<field name=\"name\">${2:nama.model}.form</field>",
+			"			<field name=\"model\">${2:nama.model}</field>",
+			"			<field name=\"arch\" type=\"xml\">",
+			"				<form>",
+			"					<header>",
+			"					</header>",
+			"					<sheet>",
+			"						<group>",
+			"							<group>",
+			"								<field name=\"name\"/>",
+			"							</group>",
+			"							<group>",
+			"							</group>",
+			"						</group>",
+			"					</sheet>",
+			"				</form>",
+			"			</field>",
+			"		</record>",
+			"",
+			"		<record model=\"ir.actions.act_window\" id=\"${1:nama_model}_action\">",
+			"			<field name=\"name\">${3:Nama Model}</field>",
+			"			<field name=\"res_model\">${2:nama.model}</field>",
+			"			<field name=\"view_type\">form</field>",
+			"			<field name=\"view_mode\">tree,form</field>",
+			"		</record>",
+			"",
+			"		<menuitem ",
+			"			id=\"main_${1:nama_model}\"",
+			"			name=\"${3:Nama Model}\"",
+			"		/>",
+			"",
+			"		<menuitem ",
+			"			id=\"menu_${1:nama_model}\"",
+			"			name=\"${3:Nama Model}\"",
+			"			parent=\"main_${1:nama_model}\"",
+			"		/>",
+			"",
+			"		<menuitem ",
+			"			id=\"submenu_${1:nama_model}\"",
+			"			name=\"${3:Nama Model}\"",
+			"			parent=\"menu_${1:nama_model}\"",
+			"",
+			"			action=\"${1:nama_model}_action\"",
+			"		/>",
+			"",
+			"	</data>",
+			"</odoo>"
+		]
+	},
+	"New - Class 2": {
+		"prefix": "New - View (Training)",
+		"body": [
+			"$0<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+			"<odoo>",
+			"	<data>",
+			"		<!-- List View -->",
+			"		<record model=\"ir.ui.view\" id=\"${1:nama_model}_tree\">",
+			"			<field name=\"name\">${2:nama.model}.tree</field>",
+			"			<field name=\"model\">${2:nama.model}</field>",
+			"			<field name=\"arch\" type=\"xml\">",
+			"				<tree>",
+			"					<field name=\"name\"/>",
+			"				</tree>",
+			"			</field>",
+			"		</record>",
+			"		",
+			"		<!-- Form View -->",
+			"		<record model=\"ir.ui.view\" id=\"${1:nama_model}_form\">",
+			"			<field name=\"name\">${2:nama.model}.form</field>",
+			"			<field name=\"model\">${2:nama.model}</field>",
+			"			<field name=\"arch\" type=\"xml\">",
+			"				<form>",
+			"					<header>",
+			"					</header>",
+			"					<sheet>",
+			"						<group>",
+			"							<group>",
+			"								<field name=\"name\"/>",
+			"							</group>",
+			"							<group>",
+			"							</group>",
+			"						</group>",
+			"					</sheet>",
+			"				</form>",
+			"			</field>",
+			"		</record>",
+			"",
+			"		<record model=\"ir.actions.act_window\" id=\"${1:nama_model}_action\">",
+			"			<field name=\"name\">${3:Nama Model}</field>",
+			"			<field name=\"res_model\">${2:nama.model}</field>",
+			"			<field name=\"view_type\">form</field>",
+			"			<field name=\"view_mode\">tree,form</field>",
+			"		</record>",
+			"",
+			"		<menuitem ",
+			"			id=\"kakek_${1:nama_model}\" ",
+			"			name=\"Kakek ${3:Nama Model}\" ",
+			"		/>",
+			"",
+			"		<menuitem ",
+			"			id=\"bapak_${1:nama_model}\" ",
+			"			name=\"Bapak ${3:Nama Model}\" ",
+			"			parent=\"kakek_${1:nama_model}\" ",
+			"		/>",
+			"",
+			"		<menuitem ",
+			"			id=\"anak_${1:nama_model}\" ",
+			"			name=\"Anak ${3:Nama Model}\" ",
+			"			parent=\"bapak_${1:nama_model}\" ",
+			"",
+			"			action=\"${1:nama_model}_action\" ",
+			"		/>",
+			"",
+			"	</data>",
+			"</odoo>"
+		],
+	},
+	"Inherit Form": {
+		"prefix": "Inherit Form",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<odoo>",
+			"	<data>",
+			"		<record model=\"ir.ui.view\" id=\"${1:nama_model}_form\">",
+			"			<field name=\"name\">${2:nama.model}.form</field>",
+			"			<field name=\"model\">${2:nama.model}</field>",
+			"			<field name=\"inherit_id\" ref=\"${3:nama_modul}.${1:nama_model}_form\"/>",
+			"			<field name=\"arch\" type=\"xml\">",
+			"				$0<xpath expr=\"//field[@name='${4:date_order}']\" position=\"before\">",
+			"					<field name=\"${5:note}\"/>",
+			"				</xpath>",
+			"			</field>",
+			"		</record>",
+			"	</data>",
+			"</odoo>"
+		],
+	},
+	"Inherit Tree": {
+		"prefix": "Inherit Tree",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<odoo>",
+			"	<data>",
+			"		<record model=\"ir.ui.view\" id=\"${1:nama_model}_tree\">",
+			"			<field name=\"name\">${2:nama.model}.tree</field>",
+			"			<field name=\"model\">${2:nama.model}</field>",
+			"			<field name=\"inherit_id\" ref=\"${3:nama_modul}.${4:nama_model}_tree\"/>",
+			"			<field name=\"arch\" type=\"xml\">",
+			"				<xpath expr=\"//field[@name='date_order']\" position=\"before\">",
+			"					<field name=\"note\"/>",
+			"				</xpath>",
+			"			</field>",
+			"		</record>",
+			"	</data>",
+			"</odoo>"
+		],
+	},
+	"Xpath - After": {
+		"prefix": "Xpath - After",
+		"body": [
+			"<xpath expr=\"//field[@name='${1:date_order}']\" position=\"${2:after}\">",
+			"	<field name=\"${3:note}\"/>",
+			"</xpath>",
+		],
+	},
+	"Xpath - Before": {
+		"prefix": "Xpath - Before",
+		"body": [
+			"<xpath expr=\"//field[@name='${1:date_order}']\" position=\"${2:before}\">",
+			"	<field name=\"${3:note}\"/>",
+			"</xpath>",
+		],
+	},
+	"Xpath - Inside": {
+		"prefix": "Xpath - Inside",
+		"body": [
+			"<xpath expr=\"//notebook\" position=\"inside\">",
+			"	<page string=\"Other Info\">",
+			"		<field name=\"is_part_time\"/>",
+			"	</page>",
+			"</xpath>"
+		],
+	},
+	"Xpath - Replace": {
+		"prefix": "Xpath - Replace",
+		"body": [
+			"<xpath expr=\"//field[@name='kasir_id']\" position=\"replace\">",
+			"	<field name=\"kasir_id\" required=\"1\"/>",
+			"</xpath>",
+		],
+	},
+	"Xpath - Attributes": {
+		"prefix": "Xpath - Attributes",
+		"body": [
+			"<xpath expr=\"//field[@name='is_aktif']\" position=\"attributes\">",
+			"	<attribute name=\"required\">1</attribute>",
+			"</xpath>"
+		],
+	},
+	"Xpath - Attributes Group": {
+		"prefix": "Xpath - Attributes Group",
+		"body": [
+			"<$0xpath expr=\"//field[@name='${1:is_aktif}']\" position=\"attributes\">",
+			"	<attribute name=\"groups\">cafe_security.group_cafe_manager</attribute>",
+			"</xpath>"
+		],
+	},
+	"Xpath (Complex)": {
+		"prefix": "Xpath Complex",
+		"body": [
+			"<xpath expr=\"/form/sheet/notebook/page/[2]\" position=\"inside\">",
+			"	<field name=\"line_ids\"/>",
+			"</xpath>",
+			"<xpath expr=\"/form/sheet/notebook/page[1]/field[@name='order_line']/tree/field[@name='discount']\" position=\"after\">",
+			"	<field name=\"kasir_id\"/>",
+			"</xpath>"
+		]
+	},
+	"New - Nomenclature sequence": {
+		"prefix": "New - Nomenclature sequence",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<odoo>",
+			"	<data noupdate=\"0\"> <!-- Tips: File ini tidak di-baca ketika -u -->",
+			"		<record model=\"ir.sequence\" id=\"${1:nama_model}_sequence\" >",
+			"			<field name=\"name\">${3:Nama Model}</field>",
+			"			<field name=\"code\">${2:nama.model}.sequence</field>",
+			"			<field name=\"prefix\">Order-</field>",
+			"			<field name=\"padding\">5</field>",
+			"			<field name=\"suffix\">-%(day)s-%(month)s-%(y)s</field>",
+			"		</record>",
+			"	</data>",
+			"</odoo>",
+		],
+	},
+	"no create no open many2one": {
+		"description": "tidak ada tombol Create and Edit pada Many2one",
+		"prefix": "no create no open",
+		"body": [
+			"options=\"{'no_open': True, 'no_create': True}\"",
+		],
+	},
+	"position attributes": {
+		"prefix": "position attributes",
+		"body": [
+			"position=\"attributes\"",
+		],
+	},
+	"Domain": {
+		"prefix": "Domain",
+		"body": [
+			"domain=\"[('${1:Nama Field}', '${2:Operator}', '${3:Kriteria}')]\""
+		],
+	},
+	"Domain ~ (=)": {
+		"prefix": "Domain ~ (=)",
+		"body": [
+			"domain=\"[('${1:payment_method}', '${2:=}', '${3:cash}')]\"",
+		],
+	},
+	"Domain ~ (like)": {
+		"prefix": "Domain ~ (like)",
+		"body": [
+			"domain=\"[('${1:description}', '${2:like}', '${3:Jus Alpukat}')]\"",
+		],
+	},
+	"Domain ~ (ilike)": {
+		"prefix": "Domain ~ (ilike)",
+		"body": [
+			"domain=\"[('${1:description', '${2:ilike}', '${3:jus alpukat}')]\"",
+		],
+	},
+	"Domain ~ (>)": {
+		"prefix": "Domain ~ (>)",
+		"body": [
+			"domain=\"[('${1:price}', '${2:&gt;}', '${3:5000}')]\"",
+		],
+	},
+	"Domain ~ (<)": {
+		"prefix": "Domain ~ (<)",
+		"body": [
+			"domain=\"[('${1:price}', '${2:&lt;}', '${3:5000}')]\"",
+		],
+	},
+	"Domain ~ (in)": {
+		"prefix": "Domain ~ (in)",
+		"body": [
+			"domain=\"[('${1:price}', '${2:in}', [${3:'draft', 'open'}])]\"",
+		],
+	},
+	"Domain ~ (not in)": {
+		"prefix": "Domain ~ (not in)",
+		"body": [
+			"domain=\"[('${1:price}', '${2:not in}', [${3:'draft', 'open'}])]\"",
+		],
+	},
+	"Domain (All Training)": {
+		"prefix": "Domain All (Training)",
+		"body": [
+			"domain=\"[('${1:nama_kolom}', '=', '${2:kriteria}')]\"",
+			"domain=\"[('${1:nama_kolom}', 'ilike', '${3:kriteria}')]\"",
+			"domain=\"[('${1:nama_kolom}', '&gt;', ${4:5000})]\"",
+			"domain=\"[('${1:nama_kolom}', '&lt;', ${5:5000})]\"",
+			"domain=\"[('${1:nama_kolom}', 'in', [${6:'kriteria1', 'kriteria2'}])]\"",
+		],
+	},
+	"Form Message and Log": {
+		"prefix": "Form Message and Log",
+		"body": [
+			"<div class=\"oe_chatter\">",
+			"	<field name=\"message_follower_ids\" widget=\"mail_followers\"/>",
+			"	<field name=\"message_ids\" widget=\"mail_thread\"/>",
+			"</div>",
+		],
+	},
+	"Label for": {
+		"prefix": "Label for",
+		"body": [
+			"$0<label for=\"${1:nama_kolom}\"/>"
+		],
+	},
+	"Field name": {
+		"prefix": "Field name",
+		"body": [
+			"$0<field name=\"${1:nama_kolom}\"/>"
+		],
+	},
+	"Field name dengan Image": {
+		"prefix": "Field name dengan Image",
+		"body": [
+			"$0<field name=\"image\" widget=\"image\" class=\"oe_avatar\"/>",
+			"<div class=\"oe_title\">",
+			"	<label for=\"name\" class=\"oe_edit_only\"/>",
+			"	<h1><field name=\"name\" class=\"oe_inline\"/></h1>",
+			"</div>"
+		],
+	},
+	"Button Kanan Form": {
+		"prefix": "Button Kanan Form",
+		"body": [
+			"<div class=\"oe_button_box\" name=\"button_box\">",
+			"	<button class=\"oe_stat_button\" type=\"object\" ",
+			"		string=\"Journal\" ",
+			"		name=\"payment_request_get_journal\" ",
+			"		help=\"Melihat Journal Terkait\" ",
+			"		icon=\"fa-paste\">",
+			"	</button>",
+			"</div>",
+		],
+	},
+	"Button Simple": {
+		"prefix": "Button Simple",
+		"body": [
+			"<button name=\"${1:waiting_to_post}\"",
+			"	string=\"${2:Approve}\"",
+			"	states=\"waiting\"",
+			"	type=\"object\"",
+			"	class=\"oe_highlight\"",
+			"/>"
+		],
+	},
+	"Button Wizard Action Tengah": {
+		"prefix": "Button Wizard Action Tengah",
+		"body": [
+			"<act_window",
+			"	id=\"action_${1:set_open}_wizard\"",
+			"	res_model=\"${2:set.open}.wizard\"",
+			"	name=\"${3:Set Open}\"",
+			"	src_model=\"${4:nama objek yg muncul di list view, contoh : cafe.order}\"",
+			"	view_mode=\"form\"",
+			"	multi=\"True\"",
+			"	target=\"new\"",
+			"	key2=\"client_action_multi\"",
+			"/>",
+		],
+	},
+	"Basic Structure": {
+		"prefix": "Basic Structure",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<odoo>",
+			"	<data>",
+			"		$0",
+			"	</data>",
+			"</odoo>"
+		],
+	},
+	"Menu Item": {
+		"prefix": "Menu Item",
+		"body": [
+			"$0<menuitem",
+			"	id=\"${1:nama_menu}_menu\"",
+			"	name=\"${2:label}\"",
+			"	parent=\"${3:nama_parent_menu}\"",
+			"/>"
+		],
+	},
+	"Menu Item Original": {
+		"prefix": "Menu Item Original",
+		"body": [
+			"<menuitem id=\"${1:nama_menu}_menu\" name=\"${2:label}\"/>",
+		],
+	},
+	"Menu Item Sequence": {
+		"prefix": "Menu Item Sequence",
+		"body": [
+			"$0sequence=\"${1:20}\""
+		],
+	},
+	"Menu Item Parent": {
+		"prefix": "Menu Item Parent",
+		"body": [
+			"parent=\"${1:nama_parent_menu}\""
+		],
+	},
+	"handle": {
+		"prefix": "handle",
+		"body": [
+			"<field name=\"sequence\" widget=\"handle\"/>"
+		],
+	},
+	"Field string": {
+		"prefix": "Field string",
+		"body": [
+			"$0string=\"${1:Nama Label}\""
+		],
+	},
+	"Field placeholder": {
+		"prefix": "Field placeholder",
+		"body": [
+			"$0placeholder=\"${1:e.g Nomor Meja}\""
+		],
+	},
+	"many2many tags": {
+		"prefix": "many2many tags",
+		"body": [
+			"widget=\"many2many_tags\""
+		],
+	},
+	"Tree View Ref": {
+		"description": "Specified View untuk open popup pada field Many2one",
+		"prefix": "Tree View Ref",
+		"body": [
+			"context=\"{'tree_view_ref': 'account.invoice_tree', 'form_view_ref': 'account.invoice_form'}\"",
+		],
+	},
+	"Form title": {
+		"prefix": "Form title",
+		"body": [
+			"<div class=\"oe_title\">",
+			"	<label string=\"Payment Request\"/>",
+			"	<h1>",
+			"		<field name=\"name\" readonly=\"1\"/>",
+			"	</h1>",
+			"</div>",
+		],
+	},
+	"Priority / Sequence": {
+		"prefix": "Priority / Sequence",
+		"body": [
+			"<field name=\"priority\">${1:20}</field>"
+		]
+	},
+	"Group": {
+		"prefix": "Group",
+		"body": [
+			"<group>",
+			"	${1:<field name=\"nama_kolom\"/>}$0",
+			"</group>"
+		],
+	},
+	"Search View (Basic)": {
+		"prefix": "Search View (Basic)",
+		"body": [
+			"<!-- Search View -->",
+			"$0<record model=\"ir.ui.view\" id=\"${1:nama_model}_search\">",
+			"	<field name=\"name\">${2:nama.model}.search</field>",
+			"	<field name=\"model\">${2:nama.model}</field>",
+			"	<field name=\"arch\" type=\"xml\">",
+			"		<search>",
+			"			<field name=\"name\"/>",
+			"			<field name=\"payment_method\"/>",
+			"			<filter name=\"fl_draft\" string=\"Draft\" domain=\"[('state','=', 'draft')]\"/>",
+			"			<group>",
+			"				<filter name=\"gr_pay\" string=\"Bayar Via\" context=\"{'group_by':'payment_method'}\"/>",
+			"			</group>",
+			"		</search>",
+			"	</field>",
+			"</record>",
+		],
+	},
+	"Search View (Complex)": {
+		"prefix": "Search View (Complex)",
+		"body": [
+			"<!-- Search View -->",
+			"<record model=\"ir.ui.view\" id=\"${1:nama_model}_search\">",
+			"	<field name=\"name\">${2:nama.model}.search</field>",
+			"	<field name=\"model\">${2:nama.model}</field>",
+			"	<field name=\"arch\" type=\"xml\">",
+			"		<search>",
+			"			<field name=\"name\"/>",
+			"			<field name=\"payment_method\"/>",
+			"			<field name=\"partner_id\" filter_domain=\"[('partner_id','child_of',self)]\"/>",
+			"			<filter name=\"fl_closed\" string=\"Closed\" domain=\"[('state','=', 'close')]\" help=\"Assets in closed state\"/>",
+			"			<group>",
+			"				<filter name=\"gr_day\" string=\"Day\" context=\"{'group_by':'date_paid:day'}\"/>",
+			"				<filter name=\"gr_pay\" string=\"Method\" context=\"{'group_by':'payment_method'}\"/>",
+			"			</group>",
+			"		</search>",
+			"	</field>",
+			"</record>",
+		],
+	},
+	"Search View (Complex Datetime)": {
+		"prefix": "Search View (Complex Datetime)",
+		"body": [
+			"<search string=\"Invoices Analysis\">",
+            "   <filter string=\"This Year\" name=\"thisyear\"",
+            "        domain=\"['|', ('date', '=', False), '&amp;',('date','&lt;=', time.strftime('%%Y-12-31')),('date','&gt;=',time.strftime('%%Y-01-01'))]\"/>",
+            "    <filter string=\"This Month\" name=\"this_month\"",
+            "        domain=\"[('date', '&gt;=', context_today().strftime('%%Y-%%m-01'))]\"/>",
+            "    <filter string=\"Last Month\" name=\"last_month\"",
+            "        domain=\"['&amp;', ('date', '&gt;=', (context_today() - relativedelta(months=1)).strftime('%%Y-%%m-01')), ('date', '&lt;', context_today().strftime('%%Y-%%m-01'))]\"/>",
+            "</search>",
+		],
+	},
+	"page": {
+		"prefix": "page",
+		"body": [
+			"$0<page string=\"${1:Info}\">",
+			"	<field name=\"${2:line_ids}\"/>",
+			"</page>"
+		],
+	},
+	"page o2m": {
+		"prefix": "page o2m",
+		"body": [
+			"$0<page string=\"${1:Line}\">",
+			"	<field name=\"${2:line_ids}\">",
+			"		<tree editable=\"bottom\">",
+			"			<field name=\"${3:name}\"/>",
+			"		</tree>",
+			"	</field>",
+			"</page>"
+		],
+	},
+	"notebook and page": {
+		"prefix": "notebook",
+		"body": [
+			"$0<notebook>",
+			"	<page string=\"${1:Info}\">",
+			"		<field name=\"${2:line_ids}\"/>",
+			"	</page>",
+			"</notebook>"
+		],
+	},
+	"Button Header": {
+		"prefix": "Button Header",
+		"body": [
+			"<button name=\"${1:set_open}\"",
+			"	string=\"${2:Set Open}\"",
+			"	type=\"object\"",
+			"/>"
+		],
+	},
+	"Button Header Original": {
+		"prefix": "Button Header Original",
+		"body": [
+		    "<button name=\"${1:set_open}\" string=\"${2:Set Open}\" type=\"object\"/>"
+		],
+	},
+	"Button Inline": {
+		"prefix": "Button Inline",
+		"body": [
+			"<button name=\"${1:get_post}\" string=\"${2:Post}\" type=\"object\"",
+			"	class=\"oe_inline fa fa-arrow-right oe_link\"/>"
+		],
+	},
+	"Button Inline sebelah Field": {
+		"prefix": "Button Inline sebelah Field",
+		"body": [
+			"<group>",
+			"	<label for=\"partner_ids\"/>",
+			"	<div class=\"o_row\">",
+			"		<field name=\"partner_ids\" widget=\"many2many_tags\"",
+			"			readonly=\"1\" nolabel=\"1\"",
+			"			/>",
+			"		<button name=\"${1:get_partner}\" string=\"Update\" type=\"object\"",
+			"			help=\"Membuka Popup Partner Terkait\"",
+			"			class=\"oe_inline fa fa-arrow-right oe_link\"/>",
+			"	</div>",
+			"</group>",
+		],
+	},
+	"Required (Basic)": {
+		"prefix": "Required (Basic)",
+		"body": [
+			"required=\"1\""
+		],
+	},
+	"Readonly (Basic)": {
+		"prefix": "Readonly (Basic)",
+		"body": [
+			"readonly=\"1\""
+		],
+	},
+	"Invisible (Basic)": {
+		"prefix": "Invisible (Basic)",
+		"body": [
+			"invisible=\"1\""
+		],
+	},
+	"Invisible (Complex)": {
+		"prefix": "Invisible (Complex)",
+		"body": [
+			"attrs=\"{'invisible':[('${1:state}', '=', '${2:open}')]}\""
+		],
+	},
+	"Invisible (States)": {
+		"prefix": "Invisible (States)",
+		"body": [
+			"states=\"draft\""
+		],
+	},
+	"Readonly (Complex)": {
+		"prefix": "Readonly (Complex)",
+		"body": [
+			"attrs=\"{'readonly': [('${1:state}', '=', '${2:open}')]}\"",
+		],
+	},
+	"context popup 1": {
+		"prefix": "context popup 1",
+		"body": [
+			"context=\"{'popup': True}\"",
+		],
+	},
+	"State": {
+		"prefix": "state widget Statusbar",
+		"body": [
+			"<field name=\"state\" widget=\"statusbar\"/>"
+		],
+	},
+	"clickable=True": {
+		"prefix": "clickable=True",
+		"body": [
+			"clickable=\"True\""
+		],
+	},
+	"oe highlight": {
+		"prefix": "oe highlight",
+		"body": [
+			"class=\"oe_highlight\""
+		],
+	},
+	"New - Wizard / Popup (Basic)": {
+		"prefix": "New - Wizard / Popup (Basic)",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+			"<odoo>",
+			"	<data>",
+			"		<record id=\"${1:set_open}_wizard\" model=\"ir.ui.view\">",
+			"			<field name=\"name\">${2:set.open}.wizard</field>",
+			"			<field name=\"model\">${2:set.open}.wizard</field>",
+			"			<field name=\"arch\" type=\"xml\">",
+			"				<form>",
+			"					<footer>",
+			"						<button name=\"process_wizard\"",
+			"							string=\"Process\"",
+			"							type=\"object\"",
+			"							class=\"oe_highlight\"",
+			"							/>",
+			"						or",
+			"						<button string=\"Cancel\" class=\"oe_link\" special=\"cancel\"/>",
+			"					</footer>",
+			"				</form>",
+			"			</field>",
+			"		</record>",
+			"	</data>",
+			"</odoo>"
+		],
+	},
+	"New - Wizard / Popup (Lengkap)": {
+		"description": "Ditambah Action Button Tengah",
+		"prefix": "New - Wizard / Popup (Lengkap)",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+			"<odoo>",
+			"	<data>",
+			"		<record id=\"${1:set_open}_wizard\" model=\"ir.ui.view\">",
+			"			<field name=\"name\">${2:set.open}.wizard</field>",
+			"			<field name=\"model\">${2:set.open}.wizard</field>",
+			"			<field name=\"arch\" type=\"xml\">",
+			"				<form>",
+			"					<div style=\"white-space: pre-line;\">",
+			"						<p><h5>Sistem akan ..</h5>",
+			"						Fitur ini bisa digunakan untuk keperluan sbb.. :",
+			"						1. Perubahan nomor Voucher",
+			"						2. Adanya perubahan <b>Expiry Date</b> dari Voucher</p>",
+			"					</div>",
+			"					<group>",
+			"						<group>",
+			"							<field name=\"name\"/>",
+			"						</group>",
+			"						<group>",
+			"						</group>",
+			"					</group>",
+			"					<footer>",
+			"						<!-- <button type=\"object\" name=\"process_wizard\" string=\"Process\" class=\"oe_highlight\"/> -->",
+			"						or",
+			"						<button string=\"Cancel\" class=\"oe_link\" special=\"cancel\"/>",
+			"					</footer>",
+			"				</form>",
+			"			</field>",
+			"		</record>",
+			"		<act_window",
+			"			id=\"action_${1:set_open}_wizard\"",
+			"			res_model=\"${2:set.open}.wizard\"",
+			"			name=\"${3:Set Open}\"",
+			"			src_model=\"${4:nama objek yg muncul di list view, contoh : cafe.order}\"",
+			"			view_mode=\"form\"",
+			"			multi=\"True\"",
+			"			target=\"new\"",
+			"			key2=\"client_action_multi\"",
+			"		/>",
+			"	</data>",
+			"</odoo>"
+		],
+	},
+	"Action (Basic)": {
+		"description": "Tidak Dengan Domain dan Specified View",
+		"prefix": "Action (Basic)",
+		"body": [
+			"<record id=\"${1:nama_model}_action\" model=\"ir.actions.act_window\">",
+			"	<field name=\"name\">${3:Nama Model}</field>",
+			"	<field name=\"res_model\">${2:nama.model}</field>",
+			"	<field name=\"view_mode\">tree,form</field>",
+			"</record>"
+		],
+	},
+	"Action (Complex)": {
+		"description": "Dengan Domain dan Specified View",
+		"prefix": "Action (Complex)",
+		"body": [
+			"<record id=\"$1_action\" model=\"ir.actions.act_window\">",
+			"	<field name=\"name\">$3</field>",
+			"	<field name=\"res_model\">$2</field>",
+			"	<field name=\"view_mode\">tree,form</field>",
+			"	<field name=\"priority\">1</field>",
+			"	<field name=\"domain\">[('name', '=', 'prepaid_revenue')]</field>",
+			"	<!-- <field name=\"domain\">[('kasir_session_id', '!=', False)]</field>  -->",
+			"	<!-- <field name=\"domain\">[('kasir_session_id', '=', False), ('type', 'in', ['out_invoice'])]</field> -->",
+			"	<field name=\"context\">{}</field>",
+			"	<field name=\"view_ids\" eval=\"[(5, 0, 0),",
+			"		(0, 0, {'view_mode': 'tree', 'view_id': ref('account.invoice_tree')}),",
+			"		(0, 0, {'view_mode': 'form', 'view_id': ref('account.invoice_form')})]\"/>",
+			"	<field name=\"help\" type=\"html\">",
+			"		<p class=\"oe_view_nocontent_create\">",
+			"		Click to start preparing a new prepaid revenue.",
+			"		</p><p>",
+			"		This view can be used by accountants in order to collect information about prepaid revenues based on start date and end date. It then allows to generate the corresponding cutoff journal entry in one click.",
+			"		</p>",
+			"	</field>",
+			"</record>"
+		],
+	},
+	"New - Menu Item File":{
+		"description": "Jika menu item mau dipisah dalam satu file",
+		"prefix": "New - Menu Item File",
+		"body":[
+			"<?xml version='1.0' encoding='UTF-8'?>",
+			"<odoo>",
+			"	<data>",
+			"		<menuitem ",
+			"			id=\"main_store_menu\" ",
+			"			name=\"Store\" ",
+			"			sequence=\"1\"",
+			"			/>",
+			"		<menuitem ",
+			"			id=\"sub_master_data\"",
+			"			parent=\"main_store_menu\" ",
+			"			name=\"Kasir\"",
+			"			sequence=\"20\"",
+			"			/>",
+			"		<menuitem ",
+			"			id=\"menu_kasir\"",
+			"			parent=\"sub_master_data\" ",
+			"			name=\"Kasir\"",
+			"			sequence=\"20\"",
+			"			/>",
+			"		<menuitem ",
+			"			id=\"menu_produk\"",
+			"			parent=\"sub_master_data\" ",
+			"			name=\"Produk\"",
+			"			sequence=\"10\"",
+			"			/>",
+			"	</data>",
+			"</odoo>",
+		]
+	},
+	"Force Save": {
+		"description": "Untuk Readonly yang bisa berubah karena onchange Odoo 11.0",
+		"prefix": "force save",
+		"body": [
+			"force_save=\"1\" readonly=\"1\"",
+		],
+	},
+	"editable bottom": {
+		"prefix": "editable bottom",
+		"body": [
+			"editable=\"bottom\"",
+		],
+	},
+	"default_order": {
+		"prefix": "default_order",
+		"body": [
+			"default_order=\"name desc\"",
+		],
+	},
+	"limit tree_view": {
+		"prefix": "limit tree_view",
+		"body": [
+			"limit=\"4\"",
+		],
+	},
+	"create False tree_view": {
+		"prefix": "create False tree_view",
+		"body": [
+			"create=\"false\"",
+		],
+	},
+	"edit False tree_view": {
+		"prefix": "edit False tree_view",
+		"body": [
+			"edit=\"false\"",
+		],
+	},
+	"delete False tree_view": {
+		"prefix": "delete False tree_view",
+		"body": [
+			"delete=\"false\"",
+		],
+	},
+	"sum total": {
+		"prefix": "sum total",
+		"body": [
+			"sum=\"${1:Total}\"",
+		],
+	},
+	"avg Average": {
+		"prefix": "avg Average",
+		"body": [
+			"avg=\"${1:Average}\"",
+		],
+	},
+	"New - Print Page Format": {
+		"prefix": "New - Print Page Format",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<odoo>",
+			"	<data>",
+			"		<record model=\"report.paperformat\" id=\"${1:nama_ukuran_kertas}_format\">",
+			"			<field name=\"name\">${2:nama ukuran kertas}</field>",
+			"			<field name=\"default\" eval=\"False\" />",
+			"			<!-- <field name=\"format\">a5</field> --> <!-- Tips : Bisa pilih ukuran yg sudah ada -->",
+			"			<field name=\"format\">custom</field>",
+			"			<field name=\"page_width\">50</field>",
+			"			<field name=\"page_height\">500</field>",
+			"			<field name=\"orientation\">Landscape</field>",
+			"			<field name=\"margin_top\">10</field>",
+			"			<field name=\"margin_bottom\">20</field>",
+			"			<field name=\"margin_left\">7</field>",
+			"			<field name=\"margin_right\">7</field>",
+			"			<field name=\"header_line\" eval=\"False\" />",
+			"			<field name=\"header_spacing\">35</field> <!-- Tips : Hide unnecessary header -->",
+			"		</record>",
+			"	</data>",
+			"</odoo>"
+		],
+	},
+	"t internal layout": {
+		"prefix": "t internal layout",
+		"body": [
+			"<t t-call=\"web.internal_layout\">",
+            "</t>"
+		],
+	},
+	"t foreach": {
+		"prefix": "t foreach",
+		"body": [
+			"$0<t t-foreach=\"doc.${1:line_ids}\" t-as=\"line\">",
+			"	<span t-esc=\"line.${2:produk_id}\"/>",
+            "	<span t-esc=\"line.${3:quantity}\"/>",
+            "</t>"
+		],
+	},
+	"New - Print (Basic)": {
+		"prefix": "New - Print (Basic)",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<odoo>",
+			"	<data>",
+			"		<report",
+			"			id=\"${1:nama_model}_print\"",
+			"			model=\"${2:nama.model}\"",
+			"			string=\"${3:Nama Model}\"",
+			"			name=\"${4:nama_modul_ini}.${1:nama_model}_template\"",
+			"			report_type=\"qweb-pdf\"",
+			"			print_report_name=\"'${3:Nama Model} - %s' % (object.name)\"",
+			"			paperformat=\"base.paperformat_us\"/>",
+			"		/>",
+			"		$0<template id=\"${1:nama_model}_template\">",
+			"			<t t-call=\"web.html_container\">",
+			"				<t t-foreach=\"docs\" t-as=\"doc\">",
+			"					Nota : <span t-esc=\"doc.name\"/>",
+			"					Status : <span t-esc=\"doc.state\"/>",
+			"				</t>",
+			"			</t>",
+			"		</template>",
+			"	</data>",
+			"</odoo>"
+		]
+	},
+	"New - Print (Complex)": {
+		"prefix": "New - Print (Complex)",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<odoo>",
+			"	<data>",
+			"		<report",
+			"			id=\"${1:nama_model}_print\"",
+			"			model=\"${2:nama.model}\"",
+			"			string=\"${3:Nama Model}\"",
+			"			name=\"${4:nama_modul_ini}.${1:nama_model}_template\"",
+			"			report_type=\"qweb-pdf\"",
+			"			print_report_name=\"'${3:Nama Model} - %s' % (object.name)\"",
+			"			paperformat=\"base.paperformat_us\"/>",
+			"		/>",
+			"		$0<template id=\"cafe_order_template\">",
+			"			<t t-call=\"web.html_container\">",
+			"				<t t-foreach=\"docs\" t-as=\"doc\">",
+			"					<t t-call=\"web.internal_layout\">",
+			"						<style>",
+			"							table {",
+			"								border-collapse: collapse;",
+			"								width: 100%;",
+			"							}",
+			"							table td, table th {",
+			"								border: 1px solid #ddd;",
+			"								padding: 8px;",
+			"							}",
+			"							table tr:nth-child(even){background-color: #f2f2f2;}",
+			"						</style>",
+			"						Nota : <span t-esc=\"doc.name\"/>",
+			"						Status : <span t-esc=\"doc.state\"/>",
+			"						<div>",
+			"							<table>",
+			"								<tr>",
+			"									<th>",
+			"										Produk",
+			"									</th>",
+			"									<th>",
+			"										Qty",
+			"									</th>",
+			"									<th>",
+			"										Price",
+			"									</th>",
+			"									<th>",
+			"										Price Total",
+			"									</th>",
+			"								</tr>",
+			"								<t t-foreach=\"doc.line_ids\" t-as=\"line\">",
+			"									<tr>",
+			"										<td>",
+			"											<span t-esc=\"line.produk_id.name\"/>",
+			"										</td>",
+			"										<td>",
+			"											<span t-esc=\"line.quantity\"/>",
+			"										</td>",
+			"										<td>",
+			"											<span t-esc=\"line.price\"/>",
+			"										</td>",
+			"										<td>",
+			"											<span t-esc=\"line.price_total\"/>",
+			"										</td>",
+			"									</tr>",
+			"								</t>",
+			"							</table>",
+			"						</div>",
+			"					</t>",
+			"				</t>",
+			"			</t>",
+			"		</template>",
+			"	</data>",
+			"</odoo>"
+		]
+	}
+}

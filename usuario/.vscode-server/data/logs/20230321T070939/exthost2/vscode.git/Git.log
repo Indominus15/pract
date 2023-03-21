@@ -1,0 +1,28 @@
+2023-03-21 07:10:38.642 [info] Nivel de registro: Info
+2023-03-21 07:10:38.642 [info] La validación encontró GIT en: “git“
+2023-03-21 07:10:38.642 [info] Usando GIT “2.20.1” desde “git”
+2023-03-21 07:10:38.642 [info] > git rev-parse --show-toplevel [5ms]
+2023-03-21 07:10:38.642 [info] fatal: detected dubious ownership in repository at '/home'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home
+2023-03-21 07:10:38.642 [info] > git rev-parse --show-toplevel [1ms]
+2023-03-21 07:10:38.642 [info] fatal: detected dubious ownership in repository at '/home'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home
+2023-03-21 07:10:38.642 [info] > git rev-parse --show-toplevel [4ms]
+2023-03-21 07:10:38.642 [info] fatal: detected dubious ownership in repository at '/home'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home
+2023-03-21 07:10:38.642 [info] > git rev-parse --show-toplevel [1ms]
+2023-03-21 07:10:38.642 [info] fatal: detected dubious ownership in repository at '/home'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home
+2023-03-21 07:10:38.642 [info] > git rev-parse --show-toplevel [2ms]
+2023-03-21 07:10:38.642 [info] fatal: detected dubious ownership in repository at '/home'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home

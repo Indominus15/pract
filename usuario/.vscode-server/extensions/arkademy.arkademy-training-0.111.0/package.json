@@ -1,0 +1,860 @@
+{
+	"name": "arkademy-training",
+	"displayName": "Arkademy - Odoo Technical Training",
+	"description": "Odoo Learning Process made easier",
+	"icon": "arkana.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ejabu/arkademy-vsce.git"
+	},
+	"publisher": "arkademy",
+	"version": "0.111.0",
+	"enableProposedApi": false,
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"keywords": [
+		"Odoo",
+		"Python",
+		"XML"
+	],
+	"categories": [
+		"Snippets",
+		"Themes",
+		"Keymaps",
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"extensionDependencies": [
+		"huacnlee.theme-macos-classic",
+		"mechatroner.rainbow-csv",
+		"dotjoshjohnson.xml"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "arkademyWindow",
+					"title": "Arkana",
+					"icon": "images/arkana-dark.svg"
+				}
+			]
+		},
+		"views": {
+			"arkademyWindow": [
+				{
+					"id": "testView",
+					"name": "Basic Technical Training"
+				}
+			]
+		},
+		"snippets": [
+			{
+				"path": "./snippets/global.code-snippets"
+			},
+			{
+				"language": "xml",
+				"path": "./snippets/xml.json"
+			},
+			{
+				"language": "python",
+				"path": "./snippets/python.json"
+			},
+			{
+				"language": "properties",
+				"path": "./snippets/properties.json"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/json.json"
+			},
+			{
+				"language": "jsonc",
+				"path": "./snippets/json.json"
+			},
+			{
+				"language": "csv",
+				"path": "./snippets/csv.json"
+			}
+		],
+		"themes": [
+			{
+				"label": "Arkademy",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark1.json"
+			},
+			{
+				"label": "Arkademy Dark II",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark2.json"
+			},
+			{
+				"label": "Arkademy Light",
+				"uiTheme": "vs",
+				"path": "./themes/light1.json"
+			},
+			{
+				"label": "Arkademy Light II",
+				"uiTheme": "vs",
+				"path": "./themes/light2.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "arkademy.openWorkspaceSettings",
+				"title": "Show Workspace Setup",
+				"category": "Arkademy"
+			},
+			{
+				"command": "arkademy.toggleBreadcrumb",
+				"title": "Hide/Show Breadcrumb",
+				"category": "Arkademy"
+			},
+			{
+				"command": "arkademy.toggleEditorTabs",
+				"title": "Hide/Show Editor Tabs",
+				"category": "Arkademy"
+			},
+			{
+				"command": "arkademy.toggleIndentGuides",
+				"title": "Hide/Show Render Indent Guides",
+				"category": "Arkademy"
+			},
+			{
+				"command": "arkademy.toggleIndentToSpace",
+				"title": "Indent to Space",
+				"category": "Arkademy"
+			},
+			{
+				"command": "arkademy.toggleIndentToTab",
+				"title": "Indent to Tab",
+				"category": "Arkademy"
+			},
+			{
+				"command": "arkademy.setup_vscode",
+				"title": "Setup Vscode",
+				"category": "Arkademy",
+				"icon": {
+					"light": "images/arkana-dark.svg",
+					"dark": "images/arkana-dark.svg"
+				}
+			},
+			{
+				"command": "arkademy.createLaunchJson",
+				"title": "Create Odoo Launch Json",
+				"category": "Arkademy",
+				"icon": {
+					"light": "images/arkana-dark.svg",
+					"dark": "images/arkana-dark.svg"
+				}
+			},
+			{
+				"command": "arkademy.openSettingsJson",
+				"title": "Open Settings JSON",
+				"category": "Arkademy"
+			},
+			{
+				"command": "arkademy.openSettingsUi",
+				"title": "Open Settings (UI)",
+				"category": "Arkademy"
+			},
+			{
+				"command": "arkademy.get_unique_date",
+				"title": "Random Unique ID for XML",
+				"category": "Arkademy"
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"command": "arkademy.openWorkspaceSettings",
+					"group": "3_open"
+				},
+				{
+					"command": "arkademy.toggleIndentGuides",
+					"group": "4_indent"
+				},
+				{
+					"command": "arkademy.toggleIndentToSpace",
+					"group": "4_indent"
+				},
+				{
+					"command": "arkademy.toggleIndentToTab",
+					"group": "4_indent"
+				},
+				{
+					"command": "arkademy.setup_vscode",
+					"group": "zz_arkademy"
+				},
+				{
+					"command": "arkademy.openSettingsUi",
+					"group": "zz_arkademy"
+				},
+				{
+					"command": "arkademy.openSettingsJson",
+					"group": "zz_arkademy"
+				}
+			],
+			"editor/title/context": [
+				{
+					"command": "arkademy.toggleBreadcrumb",
+					"group": "1_aa"
+				},
+				{
+					"command": "arkademy.toggleEditorTabs",
+					"group": "1_aa"
+				}
+			]
+		},
+		"keybindings": [
+			{
+				"key": "alt+5",
+				"command": "flutter.hotRestart",
+				"when": "dart-code:flutterProjectLoaded && inDebugMode"
+			},
+			{
+				"key": "ctrl+shift+d",
+				"command": "editor.action.copyLinesDownAction",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "alt+n",
+				"command": "workbench.action.splitEditor"
+			},
+			{
+				"key": "f1",
+				"command": "editor.action.insertSnippet"
+			},
+			{
+				"key": "ctrl+shift+z",
+				"command": "explorer.newFile",
+				"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+			},
+			{
+				"key": "ctrl+alt+z",
+				"command": "explorer.newFolder",
+				"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+			},
+			{
+				"key": "ctrl+shift+f",
+				"command": "filesExplorer.findInFolder",
+				"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+			},
+			{
+				"key": "ctrl+shift+f",
+				"command": "workbench.action.findInFiles",
+				"when": "!explorerViewletVisible && !filesExplorerFocus && explorerResourceIsRoot && inputFocus"
+			},
+			{
+				"key": "ctrl+shift+f",
+				"command": "workbench.action.search.toggleQueryDetails",
+				"when": "inputBoxFocus && searchViewletVisible"
+			},
+			{
+				"key": "ctrl+shift+f",
+				"command": "workbench.action.replaceInFiles",
+				"when": "inputBoxFocus && searchViewletVisible"
+			},
+			{
+				"key": "ctrl+v",
+				"command": "editor.action.clipboardPasteAction",
+				"when": "!editorTextFocus"
+			},
+			{
+				"key": "ctrl+shift+v",
+				"command": "editor.action.clipboardPasteAction",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "f9 f9",
+				"command": "editor.action.goToDeclaration",
+				"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+			},
+			{
+				"key": "f10 f10",
+				"command": "editor.action.referenceSearch.trigger",
+				"when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+			},
+			{
+				"key": "meta+j",
+				"command": "workbench.action.toggleZenMode"
+			},
+			{
+				"key": "meta+j",
+				"command": "workbench.action.exitZenMode",
+				"when": "inZenMode"
+			},
+			{
+				"key": "ctrl+alt+o",
+				"command": "workbench.action.openWorkspaceInNewWindow"
+			},
+			{
+				"key": "ctrl+shift+x",
+				"command": "editor.action.deleteLines"
+			},
+			{
+				"key": "ctrl+alt+d",
+				"command": "editor.action.selectHighlights",
+				"when": "editorFocus"
+			},
+			{
+				"key": "f9 f10",
+				"command": "editor.action.previewDeclaration",
+				"when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+			},
+			{
+				"key": "ctrl+shift+w",
+				"command": "workbench.action.closeOtherEditors"
+			},
+			{
+				"key": "alt+f",
+				"command": "editor.fold",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "alt+d",
+				"command": "editor.unfold",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+k alt+f",
+				"command": "editor.foldAll",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+k alt+d",
+				"command": "editor.unfoldAll",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+shift+l",
+				"command": "workbench.action.editor.changeLanguageMode"
+			},
+			{
+				"key": "meta+h",
+				"command": "git.sync"
+			},
+			{
+				"key": "ctrl+m",
+				"command": "workbench.action.togglePanel"
+			},
+			{
+				"key": "ctrl+tab",
+				"command": "workbench.action.nextEditor"
+			},
+			{
+				"key": "ctrl+shift+tab",
+				"command": "workbench.action.previousEditor"
+			},
+			{
+				"key": "alt+4",
+				"command": "editor.foldLevel4",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "alt+6",
+				"command": "editor.foldLevel6",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "alt+7",
+				"command": "editor.foldLevel7",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "backspace",
+				"command": "keybindings.editor.defineKeybinding",
+				"when": "inKeybindings && keybindingFocus"
+			},
+			{
+				"key": "shift+alt+d",
+				"command": "editor.unfoldRecursively",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "shift+alt+f",
+				"command": "editor.foldRecursively",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+p",
+				"command": "workbench.action.openRecent"
+			},
+			{
+				"key": "ctrl+w",
+				"command": "workbench.action.closeActiveEditor"
+			},
+			{
+				"key": "ctrl+l",
+				"command": "workbench.action.quickOpen"
+			},
+			{
+				"key": "ctrl+alt+e",
+				"command": "workbench.action.quickOpenNavigateNextInFilePicker",
+				"when": "inFilesPicker && inQuickOpen"
+			},
+			{
+				"key": "f2",
+				"command": "renameFile",
+				"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+			},
+			{
+				"key": "ctrl+s",
+				"command": "workbench.action.files.saveWithoutFormatting"
+			},
+			{
+				"key": "ctrl+shift+s",
+				"command": "workbench.action.files.save"
+			},
+			{
+				"key": "ctrl+shift+b",
+				"command": "workbench.files.action.collapseExplorerFolders",
+				"when": "explorerViewletVisible && !searchViewletFocus "
+			},
+			{
+				"key": "ctrl+shift+b",
+				"command": "workbench.files.action.showActiveFileInExplorer",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+shift+b",
+				"command": "search.action.collapseSearchResults",
+				"when": "searchViewletFocus && searchViewletVisible"
+			},
+			{
+				"key": "ctrl+h",
+				"command": "workbench.action.tasks.runTask",
+				"args": "git log"
+			},
+			{
+				"key": "ctrl+shift+m",
+				"command": "workbench.action.toggleEditorVisibility"
+			},
+			{
+				"key": "ctrl+alt+m",
+				"command": "workbench.action.togglePanelPosition"
+			},
+			{
+				"key": "ctrl+r",
+				"command": "cursorUndo",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+r",
+				"command": "workbench.action.navigateBack",
+				"when": "textInputFocus"
+			},
+			{
+				"key": "ctrl+shift+r",
+				"command": "workbench.action.navigateToLastEditLocation"
+			},
+			{
+				"key": "alt+t",
+				"command": "editor.action.dirtydiff.next",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+t",
+				"command": "workbench.action.compareEditor.nextChange",
+				"when": "textCompareEditorVisible && isInDiffEditor"
+			},
+			{
+				"key": "ctrl+alt+t",
+				"command": "workbench.action.compareEditor.previousChange",
+				"when": "textCompareEditorVisible && isInDiffEditor"
+			},
+			{
+				"key": "ctrl+t",
+				"command": "workbench.action.editor.nextChange"
+			},
+			{
+				"key": "ctrl+alt+t",
+				"command": "workbench.action.editor.previousChange"
+			},
+			{
+				"key": "shift+alt+t",
+				"command": "editor.action.dirtydiff.previous",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+b",
+				"command": "workbench.action.toggleSidebarVisibility"
+			},
+			{
+				"key": "meta+g",
+				"command": "outline.focus"
+			},
+			{
+				"key": "meta+o",
+				"command": "breadcrumbs.toggle"
+			},
+			{
+				"key": "alt+o",
+				"command": "breadcrumbs.focusAndSelect",
+				"when": "breadcrumbsPossible"
+			},
+			{
+				"key": "shift+alt+o",
+				"command": "workbench.action.gotoSymbol"
+			},
+			{
+				"key": "alt+o",
+				"command": "breadcrumbs.toggle",
+				"when": "!breadcrumbsPossible"
+			},
+			{
+				"key": "alt+o",
+				"command": "workbench.action.closeQuickOpen",
+				"when": "inQuickOpen"
+			},
+			{
+				"key": "meta+q",
+				"command": "bookmarks.listFromAllFiles"
+			},
+			{
+				"key": "alt+q",
+				"command": "bookmarks.jumpToNext",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "shift+alt+q",
+				"command": "bookmarks.jumpToPrevious",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "alt+a",
+				"command": "bookmarks.toggle",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "alt+shift+a",
+				"command": "bookmarks.toggleLabeled",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "delete",
+				"command": "git.unstage",
+				"when": "sideBarFocus && activeViewlet == 'workbench.view.scm' && !editorTextFocus && !findInputFocussed && !inQuickOpen"
+			},
+			{
+				"key": "enter",
+				"command": "git.stage",
+				"when": "sideBarFocus && activeViewlet == 'workbench.view.scm' && !editorTextFocus && !findInputFocussed && !inQuickOpen"
+			},
+			{
+				"key": "ctrl+alt+down",
+				"command": "cursorBottom",
+				"when": "textInputFocus"
+			},
+			{
+				"key": "ctrl+alt+up",
+				"command": "cursorTop",
+				"when": "textInputFocus"
+			},
+			{
+				"key": "tab",
+				"command": "search.focus.nextInputBox",
+				"when": "inputBoxFocus && searchViewletVisible"
+			},
+			{
+				"key": "shift+tab",
+				"command": "search.focus.previousInputBox",
+				"when": "inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+			},
+			{
+				"key": "alt+y",
+				"command": "gitlens.showQuickRepoStatus"
+			},
+			{
+				"key": "ctrl+shift+,",
+				"command": "workbench.debug.action.focusRepl"
+			},
+			{
+				"key": "alt+\\",
+				"command": "editor.action.quickFix",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "alt+o",
+				"command": "git.openFile",
+				"when": "isInDiffEditor"
+			},
+			{
+				"key": "meta+w",
+				"command": "revealFileInOS",
+				"when": "filesExplorerFocus && !editorFocus"
+			},
+			{
+				"key": "ctrl+alt+r",
+				"command": "workbench.action.reloadWindow"
+			},
+			{
+				"key": "meta+k",
+				"command": "workbench.action.toggleFullScreen"
+			},
+			{
+				"key": "f4",
+				"command": "search.action.focusNextSearchResult",
+				"when": "searchViewletVisible && hasSearchResult"
+			},
+			{
+				"key": "enter",
+				"command": "editor.action.nextMatchFindAction",
+				"when": "findInputFocussed"
+			},
+			{
+				"key": "ctrl+enter",
+				"command": "search.action.replaceAll",
+				"when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+			},
+			{
+				"key": "ctrl+f10",
+				"command": "workbench.action.debug.stop",
+				"when": "inDebugMode"
+			},
+			{
+				"key": "f4",
+				"command": "search.action.focusNextSearchResult",
+				"when": "hasSearchResult"
+			},
+			{
+				"key": "shift+f4",
+				"command": "search.action.focusPreviousSearchResult",
+				"when": "hasSearchResult"
+			},
+			{
+				"key": "alt+b",
+				"command": "editor.debug.action.toggleBreakpoint",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+down",
+				"command": "scrollPageDown",
+				"when": "textInputFocus"
+			},
+			{
+				"key": "ctrl+up",
+				"command": "scrollPageUp",
+				"when": "textInputFocus"
+			},
+			{
+				"key": "shift+alt+h",
+				"command": "gitlens.showQuickFileHistory"
+			},
+			{
+				"key": "f2",
+				"command": "editor.action.changeAll",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "alt+p",
+				"command": "editor.action.marker.next",
+				"when": "editorFocus && !editorReadonly"
+			},
+			{
+				"key": "shift+alt+p",
+				"command": "editor.action.marker.prev",
+				"when": "editorFocus && !editorReadonly"
+			},
+			{
+				"key": "ctrl+`",
+				"command": "gitlens.toggleZenMode"
+			},
+			{
+				"key": "alt+h",
+				"command": "gitlens.toggleFileBlame",
+				"when": "editorTextFocus && gitlens:activeFileStatus =~ /blameable/"
+			},
+			{
+				"key": "alt+,",
+				"command": "workbench.action.terminal.focus",
+				"when": "!terminalFocus"
+			},
+			{
+				"key": "alt+,",
+				"command": "workbench.action.terminal.clear",
+				"when": "terminalFocus && terminalIsOpen && activePanel == 'workbench.panel.terminal'"
+			},
+			{
+				"key": "ctrl+t",
+				"command": "workbench.action.terminal.split",
+				"when": "terminalFocus && terminalIsOpen && activePanel == 'workbench.panel.terminal'"
+			},
+			{
+				"key": "ctrl+pageup",
+				"command": "workbench.action.terminal.scrollToPreviousCommand",
+				"when": "terminalFocus && terminalIsOpen && activePanel == 'workbench.panel.terminal'"
+			},
+			{
+				"key": "ctrl+pagedown",
+				"command": "workbench.action.terminal.scrollToNextCommand",
+				"when": "terminalFocus && terminalIsOpen && activePanel == 'workbench.panel.terminal'"
+			},
+			{
+				"key": "ctrl+,",
+				"command": "workbench.debug.action.toggleRepl",
+				"when": "!inDebugRepl"
+			},
+			{
+				"key": "ctrl+,",
+				"command": "workbench.debug.panel.action.clearReplAction",
+				"when": "inDebugRepl"
+			},
+			{
+				"key": "ctrl+'",
+				"command": "workbench.action.debug.stepOver",
+				"when": "inDebugMode"
+			},
+			{
+				"key": "ctrl+shift+'",
+				"command": "workbench.action.debug.continue",
+				"when": "inDebugMode"
+			},
+			{
+				"key": "ctrl+;",
+				"command": "workbench.action.debug.start",
+				"when": "!inDebugMode && debugState == 'inactive'"
+			},
+			{
+				"key": "ctrl+;",
+				"command": "workbench.action.debug.restart",
+				"when": "inDebugMode && debugState == 'running'"
+			},
+			{
+				"key": "ctrl+alt+;",
+				"command": "flutter.hotRestart",
+				"when": "inDebugMode && debugState == 'running'"
+			},
+			{
+				"key": "ctrl+shift+;",
+				"command": "workbench.action.debug.selectandstart",
+				"when": "!inDebugMode"
+			},
+			{
+				"key": "ctrl+0",
+				"command": "workbench.action.debug.stop"
+			},
+			{
+				"key": "ctrl+shift+,",
+				"command": "workbench.debug.action.focusVariablesView"
+			},
+			{
+				"key": "ctrl+.",
+				"command": "workbench.action.debug.configure"
+			},
+			{
+				"key": "ctrl+shift+.",
+				"command": "workbench.action.openSettingsJson"
+			},
+			{
+				"key": "alt+.",
+				"command": "workbench.action.openFolderSettings",
+				"when": "activeEditor != 'workbench.editor.settings2'"
+			},
+			{
+				"key": "alt+.",
+				"command": "settings.switchToJSON",
+				"when": "activeEditor == 'workbench.editor.settings2'"
+			},
+			{
+				"key": "ctrl+q",
+				"command": "workbench.action.closeEditorsInOtherGroups"
+			},
+			{
+				"key": "meta+t",
+				"command": "git.openChange"
+			},
+			{
+				"key": "alt+/",
+				"command": "editor.emmet.action.toggleComment"
+			},
+			{
+				"key": "ctrl+\\",
+				"command": "editor.action.jumpToBracket"
+			},
+			{
+				"key": "ctrl+shift+\\",
+				"command": "editor.action.selectToBracket"
+			},
+			{
+				"key": "shift+alt+[",
+				"command": "editor.emmet.action.balanceIn"
+			},
+			{
+				"key": "shift+alt+]",
+				"command": "editor.emmet.action.balanceOut"
+			},
+			{
+				"key": "ctrl+shift+g",
+				"command": "workbench.action.gotoMethod"
+			},
+			{
+				"key": "alt+i",
+				"command": "editor.action.formatDocument",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "ctrl+shift+i",
+				"command": "editor.action.formatDocument",
+				"when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "ctrl+k ctrl+shift+i",
+				"command": "editor.action.trimTrailingWhitespace",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"key": "alt+;",
+				"command": "extension.trailing-semicolon",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "shift+alt+c",
+				"command": "center-editor-window.center",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "alt+v",
+				"command": "arkademy.get_unique_date",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"scripts2": {
+		"build": "webpack --mode development",
+		"watch": "webpack --watch --mode development --info-verbosity verbose",
+		"vscode:prepublish": "webpack --mode production",
+		"webpack": "webpack --mode development",
+		"webpack-dev": "webpack --mode development --watch",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"typescript": "^3.1.4",
+		"vscode": "^1.1.25",
+		"tslint": "^5.8.0",
+		"@types/node": "^8.10.25",
+		"@types/mocha": "^2.2.42"
+	},
+	"__metadata": {
+		"id": "062abd12-5102-4580-8a1f-cb4f7d746a60",
+		"publisherId": "38ee3807-c23d-4609-b868-51a966c89e5c",
+		"publisherDisplayName": "Arkademy",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1679395607005,
+		"preRelease": false
+	}
+}

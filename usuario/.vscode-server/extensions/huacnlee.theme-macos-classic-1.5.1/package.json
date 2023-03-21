@@ -1,0 +1,79 @@
+{
+	"name": "theme-macos-classic",
+	"version": "1.5.1",
+	"displayName": "macOS Classic",
+	"homepage": "https://github.com/huacnlee/vscode-macos-classic.theme",
+	"description": "macOS Classic.",
+	"publisher": "huacnlee",
+	"license": "MIT",
+	"scripts": {
+		"release": "vsce publish"
+	},
+	"maintainers": [
+		"Jason Lee <huacnlee@gmail.com>"
+	],
+	"contributors": [
+		"Jason Lee"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/huacnlee/vscode-macos-classic.theme.git"
+	},
+	"bugs": {
+		"url": "https://github.com/huacnlee/vscode-macos-classic.theme/issues"
+	},
+	"engines": {
+		"vscode": "^1.11.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"macOS",
+		"classic",
+		"TextMate",
+		"mac",
+		"dark",
+		"theme"
+	],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#3c4557",
+		"theme": "light"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "macOS Classic",
+				"uiTheme": "vs",
+				"path": "./theme/macOS-classic.json"
+			},
+			{
+				"label": "macOS Classic Dark",
+				"uiTheme": "vs-dark",
+				"path": "./theme/macOS-classic-dark.json"
+			}
+		],
+		"iconThemes": [
+			{
+				"id": "macos-classic-icons",
+				"label": "macOS Classic icon theme",
+				"path": "./icon-theme/macos-classic-icons.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "f3ec4e6b-4d20-43ab-bdcf-906088f87db6",
+		"publisherId": "c13d233e-fd04-45d1-bfb2-da2be17a9a7b",
+		"publisherDisplayName": "Jason Lee",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1679395605387,
+		"preRelease": false
+	},
+	"dependencies": {
+		"vsce": "^1.87.1"
+	}
+}

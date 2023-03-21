@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="arkademy-training" Version="0.111.0" Publisher="arkademy"/>
+    <DisplayName>Arkademy - Odoo Technical Training</DisplayName>
+    <Description xml:space="preserve">Odoo Learning Process made easier</Description>
+    <Tags>Odoo,Python,XML,theme,color-theme,snippet,keybindings</Tags>
+    <Categories>Snippets,Themes,Keymaps,Other</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.25.0" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="huacnlee.theme-macos-classic,mechatroner.rainbow-csv,dotjoshjohnson.xml" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/ejabu/arkademy-vsce.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/ejabu/arkademy-vsce.git" />
+        
+          <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/ejabu/arkademy-vsce.git" />
+        
+      
+      
+      
+      
+      
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+      
+      
+    </Properties>
+    
+    <Icon>extension/arkana.png</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/arkana.png" Addressable="true" />
+  </Assets>
+</PackageManifest>

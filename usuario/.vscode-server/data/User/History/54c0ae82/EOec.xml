@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>  
+ <record id="product_template_action_all" model="ir.actions.act_window"> <!--este id se colocará en el action de abajo-->
+        <field name="name">plantilla_modulo</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">plantilla.modulo</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+               Create a new product for prueba
+            </p>
+        </field>
+    </record>
+	<menuitem id="plantilla_modulo_menu_root" name="Plantila 1 nivel" sequence="10"/>
+	<menuitem id="plantilla_modulo_menu_submenu" name="Plantilla 2 nivel" sequence="10" parent="plantilla_modulo_menu_root"/>
+	<menuitem id="plantilla_modulo_menu_action" name="Plantilla 3 nivel" sequence="10" parent="plantilla_modulo_menu_submenu" action="product_template_action_all"/>
+</odoo>

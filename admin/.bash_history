@@ -416,3 +416,194 @@ sudo service odoo stop
 sudo service odoo status
 sudo lxc-stop cursoaedoo
 exit
+sudo service odoo start
+sudo service odoo status
+ls -l
+cd proyecto/
+ls -l
+cd version/
+cd odoo14/
+ls -l
+cd odoo/
+ls l
+ls -l
+cd ..
+ld
+ls
+cd .. cd ..
+cd ..
+ls
+cd ..
+ls
+cd confi/
+ls
+sudo cp odoo14.conf odoo14-dev.conf && sudo nano odoo14.conf 
+ls -l
+sudo nano /home/proyecto/respos/propios/plantila_modulo/__manifest__.py
+sudo nano /home/proyecto/respos/propios/plantila_modulo/__init__.py
+sudo nano /home/proyecto/respos/propios/plantila_modulo/__manifest__.py
+su usuario
+sudo nano /home/proyecto/confi/odoo14-dev.conf 
+sudo nano /home/proyecto/respos/propios/prueba/models/plantilla_modulo.py
+sudo nano /home/proyecto/respos/propios/prueba/__init__.py
+sudo nano /home/proyecto/respos/propios/prueba/models/plantilla_modulo.py
+git init
+sudo git init
+git add
+sudo git add
+yes
+clear
+git add .
+sudo git add .
+git commit -m 'Comentario de pruebas '
+sudo git commit -m 'Comentario de pruebas '
+sudo git remote add origin git@github.com:Indominus15/pract.git
+sudo git push -u origin master
+ome
+sh-keygen -t ed25519 -C "domintamarit@gmail.com "
+ssh-keygen -t ed25519 -C "domintamarit@gmail.com"
+sudo git push -u origin master
+git push -u origin master
+sudo git push -u origin master
+git push -u origin master
+ls
+cd admin
+ls
+ls -l
+sudo apt-get install ssh
+ls -l
+cd .ssh
+l
+ls
+sudo cat id_ed25519
+cat id_ed25519.pub 
+clear
+cd /home/
+ls
+cd proyecto/respos/propios/prueba
+ls
+sudo nano __manifest__.py
+cd views/
+ls
+sudo nano plantila_modulo_menu.xml 
+cd /home/proyecto/respos/propios/
+ls
+cd prueba/
+ls
+sudo mkdir security
+ls
+cd security/
+ls
+sudo cp /home/proyecto/version/odoo14/odoo/addons/account/security/ir.model.access.csv /home/proyecto/respos/propios/prueba/security/ir.model.access.css
+ls
+sudo nano ir.model.access.css 
+sudo mv /home/proyecto/respos/propios/prueba/security/ir.model.access.css /home/proyecto/respos/propios/prueba/security/ir.model.access.csv
+sudo nano ir.model.access.csv 
+sudo nano /home/proyecto/confi/odoo14-dev.conf 
+/home/proyecto/version/odoo14/odoo/odoo-bin -c /home/proyecto/confi/odoo14-dev.conf 
+su usuario
+sudo service odoo stop
+sudo service odoo statuts
+su usuario
+sudo nano /home/proyecto/respos/propios/plantila_modulo/__manifest__.pysudo 
+sudo nano /home/proyecto/respos/propios/plantila_modulo/models/__init__.py
+sudo nano /home/proyecto/confi/odoo14-dev.conf
+sudo nano /home/proyecto/respos/propios/plantila_modulo/__init__.py
+su usuario
+sudo mv /home/proyecto/respos/propios/plantila_modulo /home/proyecto/respos/propios/prueba
+sudo nano /home/proyecto/respos/propios/prueba/__init__.py
+sudo nano /home/proyecto/respos/propios/prueba/__manifest__.py
+/home/proyecto/respos/propios/prueba/models/plantilla_modulo.py
+sudo nano /home/proyecto/respos/propios/prueba/models/plantilla_modulo.py
+sudo nano /home/proyecto/respos/propios/prueba/models/__init__.py
+sudo nano /home/proyecto/confi/odoo14-dev.conf
+/home/proyecto/version/odoo14/odoo/odoo-bin -c /home/proyecto/confi/odoo14-dev.conf 
+su usuario
+sudo nano /home/proyecto/respos/propios/plantila_modulo/__manifest__.py
+sudo nano /home/proyecto/respos/propios/plantila_modulo/__init__.py
+sudo nano /home/proyecto/respos/propios/plantila_modulo/models/__init__.py
+sudo nano /home/proyecto/respos/propios/plantila_modulo/models/plantilla_modulo.py
+su usuario
+su nano /home/proyecto/confi/odoo14-dev.conf
+sudo nano /home/proyecto/confi/odoo14-dev.conf
+su usuario
+/home/proyecto/version/odoo14/odoo/odoo-bin -c /home/proyecto/confi/odoo14-dev.conf 
+su usuario
+exit
+cd /home/
+ls
+sudo mkdir .vscode
+sudo chown nobody:nobody .vscode
+sudo chown admin .vscode
+ls
+cd ..
+ls
+sudo chmod -R 777 /home/.vscode/
+sudo service odoo stop
+sudo chown -R usuario:usuario /home/proyecto/
+ls -l /home/proyecto/
+sudo chown -R usuario:usuario /home/proyecto/
+sudo chown -R usuario:usuario /home/proyecto/.
+sudo service odoo restart
+sudo service odoo status
+sudo service odoo restart
+sudo top
+sudo nano /home/proyecto/respos/propios/prueba/__manifest__.py
+sudo nano /home/proyecto/respos/propios/prueba/security/ir.model.access.csv
+sudo nano /home/proyecto/respos/propios/prueba/__manifest__.py
+sudo nano /home/proyecto/respos/propios/prueba/views/plantila_modulo_menu.xml
+sudo nano /home/proyecto/respos/propios/prueba/security/ir.model.access.csv
+sudo nano /home/proyecto/respos/propios/prueba/__manifest__.py
+sudo nano /home/proyecto/respos/propios/prueba/models/plantilla_modulo.py 
+sudo ssh cursoaeodoo status
+sudo service odoo status
+cd /etc/systemd/system
+ls
+sudo nano odoo.service 
+sudo service odoo status
+sudo systemctl daemon-reload
+sudo services odoo status
+sudo service odoo status
+/home/proyecto/version/odoo14/odoo/odoo-bin --config /home/proyecto/conf
+sudo nano odoo.service 
+sudo service odoo stop
+sudo systemctl daemon-reload
+sudo service odoo stop
+sudo service odoo start
+sudo nano odoo.service 
+sudo chwon admin /home/proyecto/
+sudo chown admin /home/proyecto/
+sudo service odoo start
+su usuario
+sudo exit
+top
+sudo kill 459
+/home/proyecto/version/odoo14/odoo/odoo-bin -c /home/proyecto/confi/odoo14-dev.conf | grep "WARNING"
+su usuario
+/home/proyecto/version/odoo14/odoo/odoo-bin -c /home/proyecto/confi/odoo14-dev.conf -d test -u prueba
+su usuario
+sudo init 6
+
+
+{     "name": "Plantilla Modulo",;     "version": "14.0.1.0.0",;     "author": "<AUTHOR(S)>, Odoo Community Association (OCA)",;     "license": "AGPL-3",;     "depends": [;         "base",;     ],;     "data": [;     "security/ir.model.access.csv",;         "views/plantilla_modulo_menu.xml",;
+sudo nano /home/proyecto/respos/propios/prueba/__manifest__.py
+sudo service odoo stop
+sudo service odoo start
+sudo service odoo status
+sudo nano /home/proyecto/respos/propios/prueba/__manifest__.py
+ls -l /home/proyecto/respos/propios/prueba/views
+su root
+sudo su root
+service odoo start
+sudo service odoo start
+sudo service odoo status
+sudo nano /home/proyecto/respos/propios/prueba/models/plantilla_modulo.py
+/home/proyecto/version/odoo14/odoo/odoo-bin -c /home/proyecto/confi/odoo14-dev.conf -d test -u prueba
+su usuario /home/proyecto/version/odoo14/odoo/odoo-bin -c /home/proyecto/confi/odoo14-dev.conf -d test -u prueba
+su admin && /home/proyecto/version/odoo14/odoo/odoo-bin -c /home/proyecto/confi/odoo14-dev.conf -d test -u prueba
+sudo service odoo status
+su usuario
+sudo service odoo status
+sudo nano odoo.service 
+sudo systemctl daemon-reload
+su usuario

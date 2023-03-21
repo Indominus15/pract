@@ -1,0 +1,85 @@
+El experimento \"pythonPromptNewToolsExtNonExistantcf\" está activo
+LSP Notebooks experiment is enabled
+LSP Notebooks interactive window support is enabled
+> conda info --json
+Ruta de acceso del intérprete de Python: /bin/python3
+[ERROR 2023-2-21 10:33:56.149]: readdir() failed for "/home/admin/.config" (Error: EACCES: permission denied, scandir '/home/admin/.config')
+[ERROR 2023-2-21 10:33:56.149]: readdir() failed for "/home/admin/.gnupg" (Error: EACCES: permission denied, scandir '/home/admin/.gnupg')
+[ERROR 2023-2-21 10:33:56.149]: readdir() failed for "/home/admin/.ssh" (Error: EACCES: permission denied, scandir '/home/admin/.ssh')
+> /bin/python -I ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-21 10:33:56.176]: Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+> /bin/python ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /bin/python3 -I ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /usr/bin/python -I ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-21 10:33:56.202]: Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+> /usr/bin/python ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /usr/bin/python3 -I ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /usr/include/python3.7 -I ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-21 10:33:56.253]: [Error: Command failed: /usr/include/python3.7 -I /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+/bin/sh: 1: /usr/include/python3.7: Permission denied
+
+	at ChildProcess.exithandler (node:child_process:399:12)
+	at ChildProcess.emit (node:events:526:28)
+	at maybeClose (node:internal/child_process:1092:16)
+	at Socket.<anonymous> (node:internal/child_process:451:11)
+	at Socket.emit (node:events:526:28)
+	at Pipe.<anonymous> (node:net:687:12)] {
+  killed: false,
+  code: 126,
+  signal: null,
+  cmd: '/usr/include/python3.7 -I /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py'
+}
+> /usr/include/python3.7 -I ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-21 10:33:58.268]: [Error: Command failed: /usr/include/python3.7 -I /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+/bin/sh: 1: /usr/include/python3.7: Permission denied
+
+	at ChildProcess.exithandler (node:child_process:399:12)
+	at ChildProcess.emit (node:events:526:28)
+	at maybeClose (node:internal/child_process:1092:16)
+	at Socket.<anonymous> (node:internal/child_process:451:11)
+	at Socket.emit (node:events:526:28)
+	at Pipe.<anonymous> (node:net:687:12)] {
+  killed: false,
+  code: 126,
+  signal: null,
+  cmd: '/usr/include/python3.7 -I /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py'
+}
+> -I ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-21 10:33:58.316]: [Error: Command failed: -I /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+/bin/sh: 0: Illegal option - 
+
+	at ChildProcess.exithandler (node:child_process:399:12)
+	at ChildProcess.emit (node:events:526:28)
+	at maybeClose (node:internal/child_process:1092:16)
+	at Socket.<anonymous> (node:internal/child_process:451:11)
+	at Socket.emit (node:events:526:28)
+	at Pipe.<anonymous> (node:net:687:12)] {
+  killed: false,
+  code: 2,
+  signal: null,
+  cmd: '-I /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py'
+}
+Iniciando el servidor de lenguaje Pylance.
+> -I ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+[ERROR 2023-2-21 10:34:0.323]: [Error: Command failed: -I /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+/bin/sh: 0: Illegal option - 
+
+	at ChildProcess.exithandler (node:child_process:399:12)
+	at ChildProcess.emit (node:events:526:28)
+	at maybeClose (node:internal/child_process:1092:16)
+	at Socket.<anonymous> (node:internal/child_process:451:11)
+	at Socket.emit (node:events:526:28)
+	at Pipe.<anonymous> (node:net:687:12)] {
+  killed: false,
+  code: 2,
+  signal: null,
+  cmd: '-I /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py'
+}
+DAP Server launched with command: /bin/python3 /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter
+Send text to terminal:  /usr/bin/env /bin/python3 /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 46109 -- /home/proyecto/version/odoo14/odoo/odoo-bin --config=/home/proyecto/confi/odoo14-dev.conf --database=test --update=prueba 
+DAP Server launched with command: /bin/python3 /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter
+Send text to terminal:  cd /home ; /usr/bin/env /bin/python3 /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 34907 -- /home/proyecto/version/odoo14/odoo/odoo-bin --config=/home/proyecto/confi/odoo14-dev.conf --database=test --update=prueba 
+DAP Server launched with command: /bin/python3 /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter
+Send text to terminal:  /usr/bin/env /bin/python3 /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 37385 -- /home/proyecto/version/odoo14/odoo/odoo-bin --config=/home/proyecto/confi/odoo14-dev.conf --database=test --update=prueba 
+DAP Server launched with command: /bin/python3 /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter
+Send text to terminal:  /usr/bin/env /bin/python3 /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 58199 -- /home/proyecto/version/odoo14/odoo/odoo-bin --config=/home/proyecto/confi/odoo14-dev.conf --database=test --update=prueba 

@@ -152,3 +152,14 @@ New EH opened, aborting shutdown
 [11:57:55] Renamed to /home/admin/.vscode-server/extensions/github.vscode-pull-request-github-0.60.0
 [11:57:55] Extracting extension completed. github.vscode-pull-request-github
 [11:57:55] Extension installed successfully: github.vscode-pull-request-github
+[13:41:25] Getting Manifest... janisdd.vscode-edit-csv
+[13:41:26] Installing extension: janisdd.vscode-edit-csv
+[13:41:27] Extension signature verification: janisdd.vscode-edit-csv. Verification status: Verified.
+[13:41:27] Extracted extension to /home/admin/.vscode-server/extensions/.4645084c-8cfb-4e03-8730-92e1e8765333: janisdd.vscode-edit-csv
+[13:41:27] Renamed to /home/admin/.vscode-server/extensions/janisdd.vscode-edit-csv-0.7.4
+[13:41:27] Extracting extension completed. janisdd.vscode-edit-csv
+[13:41:27] Extension installed successfully: janisdd.vscode-edit-csv
+[13:55:17] [127.0.0.1][73b527d9][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[13:55:17] [127.0.0.1][815c29a6][ExtensionHostConnection] <977> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[13:55:17] Last EH closed, waiting before shutting down

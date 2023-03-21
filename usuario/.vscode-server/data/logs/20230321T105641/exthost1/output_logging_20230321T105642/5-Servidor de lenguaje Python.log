@@ -1,0 +1,39 @@
+[Info  - 10:56:45 AM] (1036) Pylance language server 2023.3.20 (pyright 93a4ef87) starting
+[Info  - 10:56:45 AM] (1036) Server root directory: /home/usuario/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist
+[Info  - 10:56:46 AM] (1036) Starting service instance "home"
+[Info  - 10:56:46 AM] (1036) Auto-indent enabled
+[Info  - 10:56:46 AM] (1036) Starting service instance "<default>"
+[Info  - 10:56:46 AM] (1036) No pyproject.toml file found.
+[Info  - 10:56:46 AM] (1036) Setting pythonPath for service "<default>": "/bin/python3"
+[Warn  - 10:56:46 AM] (1036) stubPath typings is not a valid directory.
+[Info  - 10:56:46 AM] (1036) Assuming Python version 3.7
+[Info  - 10:56:46 AM] (1036) Assuming Python platform Linux
+[Info  - 10:56:46 AM] (1036) Searching for source files
+[Info  - 10:56:46 AM] (1036) No source files found.
+[Info  - 10:56:46 AM] (1036) No configuration file found.
+[Info  - 10:56:46 AM] (1036) No pyproject.toml file found.
+[Info  - 10:56:46 AM] (1036) Setting pythonPath for service "home": "/bin/python3"
+[Warn  - 10:56:46 AM] (1036) stubPath /home/typings is not a valid directory.
+[Info  - 10:56:46 AM] (1036) Assuming Python version 3.7
+[Info  - 10:56:46 AM] (1036) Assuming Python platform Linux
+[Info  - 10:56:46 AM] (1036) Searching for source files
+[Info  - 10:56:46 AM] (1036) Found 4395 source files
+[Info  - 10:56:46 AM] (1036) Background analysis(1) root directory: /home/usuario/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist
+[Info  - 10:56:46 AM] (1036) Background analysis(1) started
+[Info  - 10:56:46 AM] (1036) Background analysis(2) root directory: /home/usuario/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist
+[Info  - 10:56:46 AM] (1036) Background analysis(2) started
+[Info  - 10:56:46 AM] (1036) No pyproject.toml file found.
+[Info  - 10:56:46 AM] (1036) Setting pythonPath for service "<default>": "/bin/python3"
+[Warn  - 10:56:46 AM] (1036) stubPath typings is not a valid directory.
+[Info  - 10:56:46 AM] (1036) Assuming Python version 3.7
+[Info  - 10:56:46 AM] (1036) Assuming Python platform Linux
+[Info  - 10:56:46 AM] (1036) Searching for source files
+[Info  - 10:56:46 AM] (1036) No source files found.
+[Info  - 10:56:47 AM] (1036) Indexer background runner(3) root directory: /home/usuario/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist (index)
+[Info  - 10:56:47 AM] (1036) Indexing(3) started
+[Info  - 10:56:47 AM] (1036) scanned(3) 71 files over 1 exec env
+[Info  - 10:56:47 AM] (1036) indexed(3) 43 files over 1 exec env
+[Info  - 10:56:47 AM] (1036) Indexing finished(3).
+[Info  - 10:56:49 AM] (1036) [BG(1)] Long operation: checking: /home/proyecto/version/odoo14/odoo/odoo/service/server.py (2300ms)
+[Info  - 10:56:49 AM] (1036) [BG(1)] Long operation: analyzing: /home/proyecto/version/odoo14/odoo/odoo/service/server.py (2513ms)
+[Warn  - 10:56:51 AM] (1036) Workspace indexing has hit its upper limit: 2000 files

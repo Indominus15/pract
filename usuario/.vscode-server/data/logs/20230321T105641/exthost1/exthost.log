@@ -1,0 +1,48 @@
+2023-03-21 10:56:42.198 [info] Extension host with pid 872 started
+2023-03-21 10:56:42.199 [error] Error: EEXIST: file already exists, open '/home/usuario/.vscode-server/data/User/workspaceStorage/c349c8e1eadf7d8588b575314e826b40/vscode.lock'
+2023-03-21 10:56:42.201 [info] Lock '/home/usuario/.vscode-server/data/User/workspaceStorage/c349c8e1eadf7d8588b575314e826b40/vscode.lock': Could not acquire lock, checking if the file is stale.
+2023-03-21 10:56:42.203 [info] Lock '/home/usuario/.vscode-server/data/User/workspaceStorage/c349c8e1eadf7d8588b575314e826b40/vscode.lock': The pid 1393 appears to be gone.
+2023-03-21 10:56:42.203 [info] Lock '/home/usuario/.vscode-server/data/User/workspaceStorage/c349c8e1eadf7d8588b575314e826b40/vscode.lock': Deleting a stale lock.
+2023-03-21 10:56:42.205 [info] Lock '/home/usuario/.vscode-server/data/User/workspaceStorage/c349c8e1eadf7d8588b575314e826b40/vscode.lock': Lock acquired.
+2023-03-21 10:56:42.235 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-03-21 10:56:42.235 [info] ExtensionService#_doActivateExtension mechatroner.rainbow-csv, startup: false, activationEvent: 'onLanguage:plaintext'
+2023-03-21 10:56:42.235 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+2023-03-21 10:56:42.235 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+2023-03-21 10:56:42.236 [info] ExtensionService#_doActivateExtension trinhanhngoc.vscode-odoo, startup: false, activationEvent: 'onLanguage:python'
+2023-03-21 10:56:42.236 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-03-21 10:56:42.236 [info] ExtensionService#_doActivateExtension DotJoshJohnson.xml, startup: true, activationEvent: '*', root cause: arkademy.arkademy-training
+2023-03-21 10:56:42.450 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-03-21 10:56:42.450 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-03-21 10:56:42.541 [warning] Using default string since no string found in i18n bundle that has the key: You need to select a Python interpreter before you start debugging.
+
+Tip: click on "Select Interpreter" in the status bar.
+2023-03-21 10:56:42.541 [warning] Using default string since no string found in i18n bundle that has the key: The Python extension now includes Pylance to improve completions, code navigation, overall performance and much more! You can learn more about the update and learn how to change your language server [here](https://aka.ms/new-python-bundle).
+
+Read Pylance's license [here](https://marketplace.visualstudio.com/items/ms-python.vscode-pylance/license).
+2023-03-21 10:56:42.542 [warning] Using default string since no string found in i18n bundle that has the key: cwd:
+2023-03-21 10:56:42.542 [warning] Using default string since no string found in i18n bundle that has the key: The Microsoft Python Language Server has reached end of life. Your language server has been set to the default for Python in VS Code, Pylance.
+
+If you'd like to change your language server, you can learn about how to do so [here](https://devblogs.microsoft.com/python/python-in-visual-studio-code-may-2021-release/#configuring-your-language-server).
+
+Read Pylance's license [here](https://marketplace.visualstudio.com/items/ms-python.vscode-pylance/license).
+2023-03-21 10:56:42.664 [warning] Using default string since no string found in i18n bundle that has the key: Python is not installed. 
+Please download and install Python in order to execute cells in this notebook. 
+Once installed please reload VS Code.
+2023-03-21 10:56:42.665 [warning] Using default string since no string found in i18n bundle that has the key: Please check the 'Jupyter' [output](command:jupyter.viewOutput) panel for further details./Do not translate the text "command:jupyter.viewOutput", that is a command Id that will be used by VS Code to open the output panel
+2023-03-21 10:56:42.665 [warning] Using default string since no string found in i18n bundle that has the key: Jupyter Server Console
+2023-03-21 10:56:42.665 [warning] Using default string since no string found in i18n bundle that has the key: Operation not supported in web version of Jupyter Extension.
+2023-03-21 10:56:42.665 [warning] Using default string since no string found in i18n bundle that has the key: type to filter
+2023-03-21 10:56:42.665 [warning] Using default string since no string found in i18n bundle that has the key: Failed to install the Python Extension.
+2023-03-21 10:56:42.913 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter-renderers, startup: false, activationEvent: 'api', root cause: ms-toolsai.jupyter
+2023-03-21 10:56:43.041 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'onLanguage:python'
+2023-03-21 10:56:43.375 [info] ExtensionService#_doActivateExtension arkademy.arkademy-training, startup: true, activationEvent: '*'
+2023-03-21 10:56:43.471 [info] Eager extensions activated
+2023-03-21 10:56:43.471 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-03-21 10:56:43.471 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-03-21 10:58:02.612 [info] ExtensionService#_doActivateExtension vscode.debug-server-ready, startup: false, activationEvent: 'onDebugResolve'
+2023-03-21 10:58:22.373 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-03-21 10:58:22.374 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-03-21 10:58:22.374 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-03-21 10:59:08.775 [error] Error: connect ECONNREFUSED 20.189.173.1:443
+	at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1157:16)
+2023-03-21 11:00:35.636 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:properties'

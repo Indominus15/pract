@@ -1,0 +1,128 @@
+2023-03-21 07:09:39.848 [info] 
+
+
+
+
+2023-03-21 07:09:39.848 [info] Extension host agent started.
+2023-03-21 07:09:39.867 [info] Started initializing default profile extensions in extensions installation folder. file:///home/usuario/.vscode-server/extensions
+2023-03-21 07:09:39.879 [info] [127.0.0.1][fcfff817][ManagementConnection] New connection established.
+2023-03-21 07:09:39.881 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/usuario/.vscode-server/extensions
+2023-03-21 07:09:39.883 [info] [127.0.0.1][1fbe70bf][ExtensionHostConnection] New connection established.
+2023-03-21 07:09:39.886 [info] [127.0.0.1][1fbe70bf][ExtensionHostConnection] <993> Launched Extension Host Process.
+2023-03-21 07:09:39.913 [info] Installing extensions...
+2023-03-21 07:09:40.520 [info] Installing extension 'ms-ceintl.vscode-language-pack-es'...
+2023-03-21 07:09:40.525 [info] Getting Manifest... ms-ceintl.vscode-language-pack-es
+2023-03-21 07:09:40.579 [info] Installing extension: ms-ceintl.vscode-language-pack-es
+2023-03-21 07:09:42.193 [info] Extension signature verification: ms-ceintl.vscode-language-pack-es. Verification status: Verified.
+2023-03-21 07:09:42.237 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.96285814-5c4d-481f-b7af-823dea22733d: ms-ceintl.vscode-language-pack-es
+2023-03-21 07:09:42.242 [info] Renamed to /home/usuario/.vscode-server/extensions/ms-ceintl.vscode-language-pack-es-1.76.2023031509
+2023-03-21 07:09:42.243 [info] Extracting extension completed. ms-ceintl.vscode-language-pack-es
+2023-03-21 07:09:42.245 [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-es
+2023-03-21 07:09:42.265 [info] Extension installed successfully: ms-ceintl.vscode-language-pack-es
+2023-03-21 07:09:42.266 [info] Extension 'ms-ceintl.vscode-language-pack-es' v1.76.2023031509 was successfully installed.
+2023-03-21 07:10:07.994 [info] [127.0.0.1][fcfff817][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-21 07:10:07.999 [info] [127.0.0.1][1fbe70bf][ExtensionHostConnection] <993> Extension Host Process exited with code: 0, signal: null.
+2023-03-21 07:10:07.999 [info] Cancelling previous shutdown timeout
+2023-03-21 07:10:07.999 [info] Last EH closed, waiting before shutting down
+2023-03-21 07:10:37.816 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-03-21 07:10:37.816 [info] Cancelling previous shutdown timeout
+2023-03-21 07:10:37.865 [info] [127.0.0.1][a4620c11][ManagementConnection] New connection established.
+2023-03-21 07:10:37.866 [info] [127.0.0.1][14d9a2ba][ExtensionHostConnection] New connection established.
+2023-03-21 07:10:37.869 [info] [127.0.0.1][14d9a2ba][ExtensionHostConnection] <1129> Launched Extension Host Process.
+2023-03-21 07:12:46.875 [info] [127.0.0.1][45b6eee7][ManagementConnection] New connection established.
+2023-03-21 07:12:46.876 [info] [127.0.0.1][d9cb5c04][ExtensionHostConnection] New connection established.
+2023-03-21 07:12:46.879 [info] [127.0.0.1][d9cb5c04][ExtensionHostConnection] <1393> Launched Extension Host Process.
+2023-03-21 07:12:55.766 [info] [127.0.0.1][a4620c11][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-21 07:12:55.774 [info] [127.0.0.1][14d9a2ba][ExtensionHostConnection] <1129> Extension Host Process exited with code: 0, signal: null.
+2023-03-21 07:12:55.775 [info] Cancelling previous shutdown timeout
+2023-03-21 07:42:57.474 [info] Getting Manifest... phplasma.csv-to-table
+2023-03-21 07:42:57.538 [info] Installing extension: phplasma.csv-to-table
+2023-03-21 07:42:58.727 [info] Extension signature verification: phplasma.csv-to-table. Verification status: Verified.
+2023-03-21 07:42:58.747 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.baeca5bd-770a-4c17-8616-533112bbd604: phplasma.csv-to-table
+2023-03-21 07:42:58.752 [info] Renamed to /home/usuario/.vscode-server/extensions/phplasma.csv-to-table-1.4.0
+2023-03-21 07:42:58.753 [info] Extracting extension completed. phplasma.csv-to-table
+2023-03-21 07:42:58.756 [info] Extension installed successfully: phplasma.csv-to-table
+2023-03-21 10:33:46.098 [info] Getting Manifest... ms-python.python
+2023-03-21 10:33:47.174 [info] Installing extension: ms-python.python
+2023-03-21 10:33:47.833 [info] Getting Manifest... ms-toolsai.jupyter
+2023-03-21 10:33:48.140 [info] Getting Manifest... ms-toolsai.jupyter-keymap
+2023-03-21 10:33:48.194 [info] Getting Manifest... ms-toolsai.jupyter-renderers
+2023-03-21 10:33:49.250 [info] Getting Manifest... ms-toolsai.vscode-jupyter-cell-tags
+2023-03-21 10:33:49.299 [info] Getting Manifest... ms-toolsai.vscode-jupyter-slideshow
+2023-03-21 10:33:50.370 [info] Getting Manifest... ms-python.vscode-pylance
+2023-03-21 10:33:50.463 [info] Installing extension: ms-toolsai.jupyter ms-python.python
+2023-03-21 10:33:50.463 [info] Installing extension: ms-toolsai.jupyter-keymap ms-python.python
+2023-03-21 10:33:50.463 [info] Installing extension: ms-toolsai.jupyter-renderers ms-python.python
+2023-03-21 10:33:50.463 [info] Installing extension: ms-toolsai.vscode-jupyter-cell-tags ms-python.python
+2023-03-21 10:33:50.463 [info] Installing extension: ms-toolsai.vscode-jupyter-slideshow ms-python.python
+2023-03-21 10:33:50.463 [info] Installing extension: ms-python.vscode-pylance ms-python.python
+2023-03-21 10:33:51.422 [info] Extension signature verification: ms-toolsai.jupyter-keymap. Verification status: Verified.
+2023-03-21 10:33:51.430 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.44a95877-35e5-4acc-897f-03af3e2066c8: ms-toolsai.jupyter-keymap
+2023-03-21 10:33:51.433 [info] Renamed to /home/usuario/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.0
+2023-03-21 10:33:51.434 [info] Extracting extension completed. ms-toolsai.jupyter-keymap
+2023-03-21 10:33:51.537 [info] Extension signature verification: ms-toolsai.vscode-jupyter-cell-tags. Verification status: Verified.
+2023-03-21 10:33:51.549 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.d6f82cbc-a6eb-4302-a808-59d2572c1cfb: ms-toolsai.vscode-jupyter-cell-tags
+2023-03-21 10:33:51.552 [info] Renamed to /home/usuario/.vscode-server/extensions/ms-toolsai.vscode-jupyter-cell-tags-0.1.8
+2023-03-21 10:33:51.552 [info] Extracting extension completed. ms-toolsai.vscode-jupyter-cell-tags
+2023-03-21 10:33:51.909 [info] Extension signature verification: ms-python.python. Verification status: Verified.
+2023-03-21 10:33:52.794 [info] Extension signature verification: ms-toolsai.jupyter-renderers. Verification status: Verified.
+2023-03-21 10:33:52.848 [info] Extension signature verification: ms-toolsai.vscode-jupyter-slideshow. Verification status: Verified.
+2023-03-21 10:33:52.859 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.599841d7-4033-47b2-a1c8-e8a4e26d034a: ms-toolsai.vscode-jupyter-slideshow
+2023-03-21 10:33:52.864 [info] Renamed to /home/usuario/.vscode-server/extensions/ms-toolsai.vscode-jupyter-slideshow-0.1.5
+2023-03-21 10:33:52.865 [info] Extracting extension completed. ms-toolsai.vscode-jupyter-slideshow
+2023-03-21 10:33:52.930 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.4475cb58-eb2f-442b-89a9-0986cc754055: ms-python.python
+2023-03-21 10:33:52.933 [info] Renamed to /home/usuario/.vscode-server/extensions/ms-python.python-2023.4.1
+2023-03-21 10:33:52.936 [info] Extracting extension completed. ms-python.python
+2023-03-21 10:33:52.945 [info] Extension signature verification: ms-toolsai.jupyter. Verification status: Verified.
+2023-03-21 10:33:52.979 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.cf4426e1-3ee6-4fd4-a19c-265402bd07b4: ms-toolsai.jupyter-renderers
+2023-03-21 10:33:52.981 [info] Renamed to /home/usuario/.vscode-server/extensions/ms-toolsai.jupyter-renderers-1.0.15
+2023-03-21 10:33:52.982 [info] Extracting extension completed. ms-toolsai.jupyter-renderers
+2023-03-21 10:33:53.132 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.a2b058f5-4973-45b1-a689-5dce4571a465: ms-toolsai.jupyter
+2023-03-21 10:33:53.138 [info] Renamed to /home/usuario/.vscode-server/extensions/ms-toolsai.jupyter-2023.2.1200692131
+2023-03-21 10:33:53.142 [info] Extracting extension completed. ms-toolsai.jupyter
+2023-03-21 10:33:54.292 [info] Extension signature verification: ms-python.vscode-pylance. Verification status: Verified.
+2023-03-21 10:33:55.151 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.faab4175-0e01-47e4-a91a-a07391de26bc: ms-python.vscode-pylance
+2023-03-21 10:33:55.160 [info] Renamed to /home/usuario/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20
+2023-03-21 10:33:55.162 [info] Extracting extension completed. ms-python.vscode-pylance
+2023-03-21 10:33:55.165 [info] Extension installed successfully: ms-toolsai.jupyter-keymap
+2023-03-21 10:33:55.165 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-cell-tags
+2023-03-21 10:33:55.165 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-slideshow
+2023-03-21 10:33:55.165 [info] Extension installed successfully: ms-python.python
+2023-03-21 10:33:55.165 [info] Extension installed successfully: ms-toolsai.jupyter-renderers
+2023-03-21 10:33:55.165 [info] Extension installed successfully: ms-toolsai.jupyter
+2023-03-21 10:33:55.165 [info] Extension installed successfully: ms-python.vscode-pylance
+2023-03-21 10:44:48.719 [info] Getting Manifest... trinhanhngoc.vscode-odoo
+2023-03-21 10:44:48.991 [info] Installing extension: trinhanhngoc.vscode-odoo
+2023-03-21 10:44:50.274 [info] Extension signature verification: trinhanhngoc.vscode-odoo. Verification status: Verified.
+2023-03-21 10:44:50.888 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.e29eae04-267c-46de-9498-0efd228bd1f4: trinhanhngoc.vscode-odoo
+2023-03-21 10:44:50.894 [info] Renamed to /home/usuario/.vscode-server/extensions/trinhanhngoc.vscode-odoo-0.1.10
+2023-03-21 10:44:50.895 [info] Extracting extension completed. trinhanhngoc.vscode-odoo
+2023-03-21 10:44:50.898 [info] Extension installed successfully: trinhanhngoc.vscode-odoo
+2023-03-21 10:46:39.128 [info] Getting Manifest... arkademy.arkademy-training
+2023-03-21 10:46:39.394 [info] Installing extension: arkademy.arkademy-training
+2023-03-21 10:46:39.628 [info] Getting Manifest... dotjoshjohnson.xml
+2023-03-21 10:46:44.893 [info] Getting Manifest... mechatroner.rainbow-csv
+2023-03-21 10:46:45.189 [info] Getting Manifest... huacnlee.theme-macos-classic
+2023-03-21 10:46:45.326 [info] Installing extension: dotjoshjohnson.xml arkademy.arkademy-training
+2023-03-21 10:46:45.326 [info] Installing extension: mechatroner.rainbow-csv arkademy.arkademy-training
+2023-03-21 10:46:45.327 [info] Installing extension: huacnlee.theme-macos-classic arkademy.arkademy-training
+2023-03-21 10:46:46.420 [info] Extension signature verification: huacnlee.theme-macos-classic. Verification status: Verified.
+2023-03-21 10:46:46.461 [info] Extension signature verification: mechatroner.rainbow-csv. Verification status: Verified.
+2023-03-21 10:46:46.489 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.5a36a945-f0c5-40ca-b04e-26894cb1899b: mechatroner.rainbow-csv
+2023-03-21 10:46:46.495 [info] Renamed to /home/usuario/.vscode-server/extensions/mechatroner.rainbow-csv-3.5.1
+2023-03-21 10:46:46.497 [info] Extracting extension completed. mechatroner.rainbow-csv
+2023-03-21 10:46:46.701 [info] Extension signature verification: dotjoshjohnson.xml. Verification status: Verified.
+2023-03-21 10:46:46.897 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.effcb26e-5b59-4142-8316-b1045faf53dd: dotjoshjohnson.xml
+2023-03-21 10:46:46.904 [info] Renamed to /home/usuario/.vscode-server/extensions/dotjoshjohnson.xml-2.5.1
+2023-03-21 10:46:46.905 [info] Extracting extension completed. dotjoshjohnson.xml
+2023-03-21 10:46:46.976 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.36827776-4740-4cab-a45f-dda88439e6da: huacnlee.theme-macos-classic
+2023-03-21 10:46:46.979 [info] Renamed to /home/usuario/.vscode-server/extensions/huacnlee.theme-macos-classic-1.5.1
+2023-03-21 10:46:46.979 [info] Extracting extension completed. huacnlee.theme-macos-classic
+2023-03-21 10:46:48.088 [info] Extension signature verification: arkademy.arkademy-training. Verification status: Verified.
+2023-03-21 10:46:48.093 [info] Extracted extension to /home/usuario/.vscode-server/extensions/.43cb6c96-25ec-44f5-96f2-82793aa495ba: arkademy.arkademy-training
+2023-03-21 10:46:48.098 [info] Renamed to /home/usuario/.vscode-server/extensions/arkademy.arkademy-training-0.111.0
+2023-03-21 10:46:48.099 [info] Extracting extension completed. arkademy.arkademy-training
+2023-03-21 10:46:48.102 [info] Extension installed successfully: mechatroner.rainbow-csv
+2023-03-21 10:46:48.102 [info] Extension installed successfully: dotjoshjohnson.xml
+2023-03-21 10:46:48.102 [info] Extension installed successfully: huacnlee.theme-macos-classic
+2023-03-21 10:46:48.102 [info] Extension installed successfully: arkademy.arkademy-training

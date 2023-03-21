@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false
+}

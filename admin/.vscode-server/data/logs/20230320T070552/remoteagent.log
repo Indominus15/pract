@@ -21,3 +21,13 @@
 2023-03-20 11:57:55.323 [info] Renamed to /home/admin/.vscode-server/extensions/github.vscode-pull-request-github-0.60.0
 2023-03-20 11:57:55.326 [info] Extracting extension completed. github.vscode-pull-request-github
 2023-03-20 11:57:55.329 [info] Extension installed successfully: github.vscode-pull-request-github
+2023-03-20 13:41:25.902 [info] Getting Manifest... janisdd.vscode-edit-csv
+2023-03-20 13:41:26.181 [info] Installing extension: janisdd.vscode-edit-csv
+2023-03-20 13:41:27.297 [info] Extension signature verification: janisdd.vscode-edit-csv. Verification status: Verified.
+2023-03-20 13:41:27.350 [info] Extracted extension to /home/admin/.vscode-server/extensions/.4645084c-8cfb-4e03-8730-92e1e8765333: janisdd.vscode-edit-csv
+2023-03-20 13:41:27.356 [info] Renamed to /home/admin/.vscode-server/extensions/janisdd.vscode-edit-csv-0.7.4
+2023-03-20 13:41:27.356 [info] Extracting extension completed. janisdd.vscode-edit-csv
+2023-03-20 13:41:27.359 [info] Extension installed successfully: janisdd.vscode-edit-csv
+2023-03-20 13:55:17.334 [info] [127.0.0.1][73b527d9][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-20 13:55:17.382 [info] [127.0.0.1][815c29a6][ExtensionHostConnection] <977> Extension Host Process exited with code: 0, signal: null.
+2023-03-20 13:55:17.383 [info] Last EH closed, waiting before shutting down

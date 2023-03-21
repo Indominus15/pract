@@ -1,0 +1,689 @@
+{
+  "from import": {
+    "prefix": "from import",
+    "body": "from . import ${1:nama_folder / nama_file(tanpa .py)}"
+  },
+  "import UserError": {
+    "prefix": "import UserError",
+    "body": "from odoo.exceptions import UserError"
+  },
+  "loop example": {
+    "prefix": "loop example",
+    "body": [
+      "sale_docs = []",
+      "for sale_doc in sale_docs:",
+      "\tsale_doc.write({",
+      "\t\t'state' : 'open',",
+      "\t})"
+    ]
+  },
+  "loop + sum example": {
+    "prefix": "loop + sum example",
+    "body": [
+      "temp_amount = 0",
+      "for sale_doc in sale_docs:",
+      "\ttemp_amount += sale_doc.amount_total",
+    ]
+  },
+  "loop + append example": {
+    "prefix": "loop + append example",
+    "body": [
+      "temp_array = []",
+      "for i in range(4):",
+      "\tvalue = {",
+      "\t\t'index' : i,",
+      "\t}",
+      "\ttemp_array.append(value)",
+    ]
+  },
+  "access / modify Dictionary": {
+    "prefix": "access / modify Dictionary",
+    "body": [
+      "value = {",
+      "\t'name' : 'Es Kopi',",
+      "\t'qty' : '3',",
+      "\t'price' : '15000',",
+      "}",
+      "subtotal = value['qty'] * value['price']",
+      "value['subtotal'] = subtotal",
+    ]
+  },
+  "New Model": {
+    "prefix": "New Model",
+    "body": [
+      "$0from odoo import models, fields, api",
+      "",
+      "class ${1:NamaModel}(models.Model):",
+      "	_name = '${2:nama.model}'",
+      "",
+      "	name = fields.Char(string='${3:Label dari Field}')"
+    ]
+  },
+  "New Model (Lengkap)": {
+    "prefix": "New Model (Lengkap)",
+    "body": [
+      "$0from odoo import models, fields, api, _",
+      "from odoo.exceptions import UserError",
+      "",
+      "class ${1:NamaModel}(models.Model):",
+      "	_name = '${2:nama.model}'",
+      "",
+      "	name = fields.Char(string='${3:Label dari Field}')"
+    ]
+  },
+  "Inherit Model": {
+    "prefix": "Inherit Model",
+    "body": [
+      "from odoo import models, fields, api, _",
+      "from odoo.exceptions import UserError",
+      "",
+      "class ${1:NamaModel}(models.Model):",
+      "	_inherit = '${2:nama.model}'",
+      "",
+      "	$0",
+    ]
+  },
+  "Training All Fields": {
+    "prefix": "fo_all",
+    "body": [
+      "alamat = fields.Text(string='Alamat')",
+      "tahun_masuk = fields.Integer(string='Tahun Masuk')",
+      "indeks_prestasi = fields.Float(string='Indeks Prestasi')",
+      "",
+      "tanggal_lahir = fields.Date(string='Tanggal Lahir')",
+      "waktu_bangun = fields.Datetime(string='Waktu Bangun Tidur')",
+      "gender = fields.Selection(",
+      "	selection=[",
+      "		('l', 'Laki-laki'),",
+      "		('p', 'Perempuan'),",
+      "		],",
+      "	string='Gender')",
+      "",
+      "is_part_time = fields.Boolean(string='Part Time')",
+    ]
+  },
+  "Odoo Field Related": {
+    "prefix": "fo_related",
+    "body": [
+      "invoice_partner_id = fields.Many2one('res.partner', related='invoice_id.partner_id', string='Nama')",
+    ]
+  },
+  "Odoo Field Boolean": {
+    "prefix": "fo_bool",
+    "body": [
+      "${1:to_check} = fields.Boolean(string='${2:Check ?}')"
+    ]
+  },
+  "Odoo Field Text": {
+    "prefix": "fo_text",
+    "body": [
+      "${1:alamat} = fields.Text(string='${2:Alamat}')"
+    ]
+  },
+  "Odoo Field Char": {
+    "prefix": "fo_char",
+    "body": [
+      "${1:name} = fields.Char(string='${2:Product name}')"
+    ]
+  },
+  "Odoo Field Binary": {
+    "prefix": "fo_binary",
+    "body": [
+      "${1:image} = fields.Binary(string='${2:Image}')"
+    ]
+  },
+  "Odoo Field Selection": {
+    "prefix": "fo_selection",
+    "body": [
+      "$0${1:payment_method} = fields.Selection([(\"cash\",\"Cash\"),(\"card\",\"Card\")], string='${2:Payment Method}')"
+    ]
+  },
+  "Odoo Field Selection (+named argument)": {
+    "prefix": "fo_selection (+named argument)",
+    "body": [
+      "$0${1:payment_method} = fields.Selection(",
+      "	selection=[",
+      "		('cash', 'Cash'),",
+      "		('card', 'Card'),",
+      "		],",
+      "	string='${2:Payment Method}')",
+    ]
+  },
+  "Odoo Field Integer": {
+    "prefix": "fo_int",
+    "body": [
+      "${1:quantity} = fields.Integer(string='${2:Quantity}')"
+    ]
+  },
+  "Odoo Field Float": {
+    "prefix": "fo_float",
+    "body": [
+      "${1:price_total} = fields.Float(string='${2:Price Total}')"
+    ]
+  },
+  "Odoo Field Date": {
+    "prefix": "fo_date",
+    "body": [
+      "${1:tanggal_masuk} = fields.Date(string='${2:Tanggal Masuk}')"
+    ]
+  },
+  "Odoo Field Date (Today)": {
+    "prefix": "fo_date + today",
+    "body": [
+      "${1:date_order} = fields.Date(string='${2:Tanggal Pesan}', default=fields.Date.today())"
+    ]
+  },
+  "default Today": {
+    "prefix": "default Today",
+    "body": [
+      "default=fields.Date.today()"
+    ]
+  },
+  "default User Id": {
+    "prefix": "default User Id",
+    "body": [
+      "default=lambda self: self.env.user.id"
+    ]
+  },
+  "groups field": {
+    "prefix": "groups field",
+    "body": [
+      "$0groups=\"${1:cafe_security.group_cafe_manager}\"",
+    ]
+  },
+  "fo_selection add": {
+    "prefix": "fo_selection add",
+    "body": [
+      "selection_add=[(\"paid\", \"Paid\")]"
+    ]
+  },
+  "state selection": {
+    "prefix": "state selection",
+    "body": [
+      "${1:state} = fields.Selection([",
+      "		('draft', 'Draft'),",
+      "		('open', 'Open'),",
+      "	], string='${2:Status}', default='draft')",
+    ]
+  },
+  "m2o Field": {
+    "prefix": "m2o Field",
+    "description": "Many2one Field Tanpa Keyword Argument",
+    "body": [
+      "$0${1:pegawai_id} = fields.Many2one('${2:toko.pegawai}', string='${3:Kasir}')",
+    ]
+  },
+  "m2o Field (Lengkap)": {
+    "prefix": "m2o Field (Lengkap)",
+    "description": "Many2one Field Dengan Keyword Argument",
+    "body": [
+      "$0${1:pegawai_id} = fields.Many2one(",
+      "\tcomodel_name='${2:toko.pegawai}',",
+      "\tstring='${3:Kasir}'",
+      "\t)"
+    ]
+  },
+  "o2m Field": {
+    "prefix": "o2m Field",
+    "description": "Tanpa Keyword Argument",
+    "body": [
+      "$0${1:struk_ids} = fields.One2many('${2:toko.struk}', '${3:pegawai_id}', string='${4:Riwayat Jual}')",
+    ]
+  },
+  "o2m Field (+named argument)": {
+    "prefix": "o2m Field (+named argument)",
+    "description": "Dengan Keyword Argument",
+    "body": [
+      "$0${1:struk_ids} = fields.One2many(",
+      "\tcomodel_name='${2:toko.struk}',",
+      "\tinverse_name='${3:pegawai_id}',",
+      "\tstring='${4:Riwayat Jual}',",
+      "\t)"
+    ]
+  },
+  "o2m m2o": {
+    "prefix": "o2m m2o",
+    "description": "Tanpa Keyword Argument",
+    "body": [
+      "$0${1:line_ids} = fields.One2many('${2:store.order.line}', '${3:order_id}', 'Line')",
+      "",
+      "${3:order_id} = fields.Many2one('${4:store.order}', '${5:Invoice}')$0",
+    ]
+  },
+  "o2m m2o (+named argument)": {
+    "prefix": "o2m m2o (+named argument)",
+    "description": "Dengan Keyword Argument",
+    "body": [
+      "$0${1:line_ids} = fields.One2many(comodel_name='${2:store.order.line}', inverse_name='${3:order_id}', string='Line')",
+      "",
+      "${3:order_id} = fields.Many2one(comodel_name='${4:store.order}', '${5:Invoice}')$0",
+    ]
+  },
+  "m2m (Basic)": {
+    "description": "Tidak custom nama tabel bridging",
+    "prefix": "m2m (Basic)",
+    "body": [
+      "$0${1:matang_ids} = fields.Many2many(",
+      "	comodel_name='${2:cafe.matang}', ",
+      "	string='${3:Level Matang}'",
+      "	)",
+      "",
+    ]
+  },
+  "m2m (Bridging Table)": {
+    "description": "Custom nama Tabel Bridging",
+    "prefix": "m2m (Bridging Table)",
+    "body": [
+      "$0${1:matang_ids} = fields.Many2many(",
+      "	comodel_name='${2:cafe.matang}', ",
+      "	relation='${3:level_matang_rel}',",
+      "	string='${4:Level Matang}'",
+      "	)",
+      "",
+    ]
+  },
+  "m2m (Column)": {
+    "description": "Custom nama kolom pada Tabel Bridging",
+    "prefix": "m2m (Column)",
+    "body": [
+      "$0${1:matang_ids} = fields.Many2many(",
+      "	comodel_name='${2:cafe.matang}', ",
+      "	relation='${3:level_matang_rel}',",
+      "	column1='${4:matang_id}',",
+      "	column2='${5:produk_id}',",
+      "	string='${6:Level Matang}'",
+      "	)",
+      "",
+    ]
+  },
+  "Search Query": {
+    "prefix": "search Query",
+    "body": [
+      "search_query = [('${1:nama_kolom}', '${2:operator = > < like }', '${3:kriteria}')]",
+    ]
+  },
+  "readonly states": {
+    "prefix": "readonly states",
+    "body": [
+      "readonly=True, states={'draft': [('readonly', False)]}",
+    ]
+  },
+  "Track Visibility": {
+    "prefix": "Track Visibility",
+    "body": [
+      "track_visibility='onchange'",
+    ]
+  },
+  "ondelete restrict": {
+    "prefix": "ondelete restrict",
+    "body": [
+      "ondelete='restrict'",
+    ]
+  },
+  "ondelete cascade": {
+    "prefix": "ondelete cascade",
+    "body": [
+      "ondelete='cascade'",
+    ]
+  },
+  "ondelete set null": {
+    "prefix": "ondelete set null",
+    "body": [
+      "ondelete='set null'",
+    ]
+  },
+  "compute get_price_total": {
+    "prefix": "compute get_price_total",
+    "body": [
+      "$0compute='${1:get_price_total}',",
+    ]
+  },
+  "store = True": {
+    "prefix": "store = True",
+    "body": [
+      "$0store=${1:True},",
+    ]
+  },
+  "messaging _inherit (Current)": {
+    "prefix": "messaging _inherit (Current)",
+    "body": [
+      "$0_name = '${1:cafe.order}'",
+      "_inherit = ['mail.thread']"
+    ]
+  },
+  "messaging _inherit (Existing)": {
+    "prefix": "messaging _inherit (Existing)",
+    "body": [
+      "$0_name = '${1:cafe.order}'",
+      "_inherit = ['mail.thread', '${1:cafe.order}']"
+    ]
+  },
+  "orm create": {
+    "prefix": "orm create",
+    "body": [
+      "self.create({'name': 'Draft'})",
+      "$0"
+    ]
+  },
+  "orm write": {
+    "prefix": "orm write",
+    "body": [
+      "self.write({'price_promo': 0})",
+      "$0"
+    ]
+  },
+  "def super": {
+    "prefix": "def super",
+    "body": [
+      "# super(SaleOrder, self).action_cancel()",
+      "super(${1:NamaModel}, self).${2:nama_fungsi}(${3:args})",
+      "$0"
+    ]
+  },
+  "nama baru sequence": {
+    "prefix": "nama baru sequence",
+    "body": [
+      "$0nama_baru = self.env['ir.sequence'].next_by_code('${1:nama.model}.sequence')",
+    ]
+  },
+  "def query to PSQL": {
+    "prefix": "def query to PSQL",
+    "body": [
+      "def query_all_name_sale_voucher(self):",
+      "	self._cr.execute(\"SELECT name FROM sale_voucher\")",
+      "	query_rows = self._cr.dictfetchall()",
+      "	for row in query_rows:",
+      "		print(row)",
+    ]
+  },
+  "Odoo Field Sequence": {
+    "prefix": "fo_sequence",
+    "body": [
+      "_order = \"sequence\"",
+      "",
+      "sequence = fields.Integer('Sequence')"
+    ]
+  },
+  "sql constraint": {
+    "prefix": "sql constraint",
+    "body": [
+      "$0_sql_constraints = [",
+      "	('${1:kode_uniq}', 'unique(${2:kode})', '${3:Nomor Kode harus unik !}')",
+      "]"
+    ]
+  },
+  "Raise User Error (Exception Popup)": {
+    "prefix": "raise UserError (Exception Popup)",
+    "body": [
+      "raise UserError('${1:Mohon maaf tidak bisa ..}')"
+    ]
+  },
+  "def button (Odoo Class Function)": {
+    "prefix": "def button (Odoo Class Function)",
+    "body": [
+      "def set_open(self):",
+      "	for doc in self:",
+      "		doc.state = 'open'",
+      "$0"
+    ]
+  },
+  "def compute": {
+    "prefix": "def compute",
+    "body": [
+      "@api.depends('quantity', 'price')",
+      "def get_price_total(self):",
+      "\t$0self.price_total = self.quantity * self.price",
+      ""
+    ]
+  },
+  "fo_float_compute": {
+    "prefix": "fo_float_compute",
+    "body": [
+      "${1:amount_total} = fields.Float(compute='${2:_compute_total}', string='Total', store=False)",
+      "",
+      "@api.depends('line_ids')",
+      "def ${2:_compute_total}(self):",
+      "	for order_doc in self:",
+      "		amount_total = sum(order_doc.line_ids.mapped('price_total'))",
+      "		order_doc.amount_total = amount_total",
+      "",
+    ]
+  },
+  "@ api.depends": {
+    "prefix": "@ api.depends",
+    "body": [
+      "@api.depends('${1:line_ids}')"
+    ]
+  },
+  "Field Assignment": {
+    "prefix": "api onchange Field Assignment",
+    "body": [
+      "@api.onchange('${1:produk_id}')",
+      "def get_price(self):",
+      "	self.price = self.produk_id.price",
+      "",
+    ]
+  },
+  "Popup / Warning": {
+    "prefix": "api.onchange Popup / Warning",
+    "body": [
+      "@api.onchange('name')",
+      "def validasi_form(self):",
+      "	## Validasi Karakter pada field 'name'",
+      "	if '*' in self.name:",
+      "		return {",
+      "			'warning': {",
+      "				'title': '${1:Nama Popup}',",
+      "				'message': '${2:Message pada Popup}',",
+      "			}",
+      "		}",
+      "$0",
+    ]
+  },
+  "Relation Domain Changed": {
+    "prefix": "api onchange Relation Domain Changed",
+    "body": [
+      "@api.onchange('store_name')",
+      "def ganti_domain(self):",
+      "    self.kasir_id = False",
+      "    return {",
+      "        'domain':",
+      "            {",
+      "                'kasir_id': [('store_name', '=', self.store_name)]",
+      "            },",
+      "    }",
+      "",
+    ]
+  },
+  "QQ": {
+    "prefix": "qq Flag Here",
+    "description": "Untuk menambahkan baris ketika debugging ",
+    "body": [
+      "print('${1:Flag Here}')"
+    ]
+  },
+  "lll": {
+    "prefix": "lll",
+    "body": [
+      "print(f'$2{${1:nama_var}}')"
+    ]
+  },
+  "llp": {
+    "prefix": "llp",
+    "body": [
+      "print(f'$2{${1:nama_var}}')",
+      "$0"
+    ]
+  },
+  "fff": {
+    "prefix": "fff",
+    "body": [
+      "print('${1:Flag Here}')",
+      "$0"
+    ]
+  },
+  "required di Field": {
+    "prefix": "required",
+    "body": [
+      "required=True, ",
+    ]
+  },
+  "size di Field": {
+    "prefix": "size",
+    "body": [
+      "size=6, ",
+    ]
+  },
+  "Odoo Recordset Api - Filtered": {
+    "prefix": "filtered Api ",
+    "body": [
+      "docs = self.env['sale.order'].search([]).filtered(lambda x: x.is_check)",
+      "# equal to ~",
+      "search_query = [('is_check', '=', True)]",
+      "docs = self.env['sale.order'].search(sq)"
+    ]
+  },
+  "Odoo Recordset Api - Mapped": {
+    "prefix": "mapped Api ",
+    "body": [
+      "temp_array = self.env['sale.order'].search([]).mapped('amount_total')",
+      "# equal to ~",
+      "docs = self.env['sale.order'].search([])",
+      "temp_array = []",
+      "for doc in docs:",
+      "	temp_array.append(doc.amount_total)"
+    ]
+  },
+  "Odoo Recordset Api - Sorted": {
+    "prefix": "Sorted Api ",
+    "body": [
+      "docs = self.env['sale.order'].search([]).sorted(lambda x: -x.date_order)",
+      "\"\"\"",
+      "equal to ~",
+      "SELECT *",
+      "	FROM sale_order so",
+      "	ORDER BY so.date_order desc",
+      "\"\"\""
+    ]
+  },
+  "String Literals (Basic - Oneline)": {
+    "prefix": "String Literals (Basic - Oneline)",
+    "body": [
+      "referensi_po = \"PO : %s\" % (self.origin)"
+    ]
+  },
+  "String Literals (Complex - Multiline)": {
+    "prefix": "String Literals (Complex - Multiline)",
+    "body": [
+      "message = '''",
+      "	Dokumen terkait ditemukan lebih dari satu, yaitu :",
+      "",
+      "	%s",
+      "''' % (', '.join(account_move_doc.mapped('name')))",
+    ]
+  },
+  "Manifest Template": {
+    "prefix": "Manifest",
+    "body": [
+      "$0{",
+      "  'name': '${1:Nama Business App / Module}',",
+      "  'author': '${2:Arkana}',",
+      "  'version': '0.1',",
+      "  'depends': [",
+      "    # 'nama_modul',",
+      "  ],",
+      "  'data': [",
+      "    # 'views/nama_file.xml',",
+      "  ],",
+      "  'qweb': [",
+      "    # 'static/src/xml/nama_widget.xml',",
+      "  ],",
+      "  'sequence': 1,",
+      "  'auto_install': False,",
+      "  'installable': True,",
+      "  'application': True,",
+      "  'category': '- Arkademy Part 1',",
+      "  'summary': '${3:Catat Penjualan Sederhana}',",
+      "  'license': 'OPL-1',",
+      "  'website': 'https://www.arkana.co.id/',",
+      "  'description': '-'",
+      "}",
+    ]
+  },
+  "domain field": {
+    "prefix": "domain field",
+    "body": [
+      "domain=[('journal_id_type', '=', 'bank'), ('payment_type', '=', 'inbound')]",
+    ]
+  },
+  "pass context wizard": {
+    "prefix": "pass context wizard",
+    "body": [
+      "'context' : {'default_${1:order_id}' : self.${2:order_id}},",
+    ]
+  },
+  "def liat wizard (Basic)": {
+    "prefix": "def liat wizard (Basic)",
+    "description": "Popup dengan Form / Tree View tidak ditentukan",
+    "body": [
+      "def buka_wizard(self):",
+      "	$0return {",
+      "		'type': 'ir.actions.act_window',",
+      "		'name': '${1:Popup}',",
+      "		'res_model': '${2:nama.class.wizard}',",
+      "		'view_type': 'form',",
+      "		'view_mode': 'form',",
+      "		'target': 'new',",
+      "	}",
+      "",
+    ]
+  },
+  "def liat wizard (Complex)": {
+    "prefix": "def liat wizard (Complex)",
+    "description": "Popup dengan Form / Tree View yang ditentukan",
+    "body": [
+      "def buka_wizard_exact_tree_form(self):",
+      "	action = self.env.ref('account.view_account_supplier_payment_tree')",
+      "	result = action.read()[0]",
+      "	imd = self.env['ir.model.data']",
+      "	list_view_id = imd.xmlid_to_res_id('account.view_account_supplier_payment_tree')",
+      "	form_view_id = imd.xmlid_to_res_id('account.view_account_payment_form')",
+      "	result['domain'] = \"[('id', 'in', \" + str(self.advance_ids.ids) + \")]\"",
+      "	return {",
+      "		'name': 'Advances',",
+      "		'view_type': 'form',",
+      "		'view_mode': 'tree,form',",
+      "		'views': [[list_view_id, 'tree'], [form_view_id, 'form']],",
+      "		'domain' : result.get('domain'),",
+      "		'res_model': 'account.payment',",
+      "		'type': 'ir.actions.act_window',",
+      "	}",
+    ]
+  },
+  "New - Wizard / Popup": {
+    "prefix": "New Wizard / Popup",
+    "body": [
+      "from odoo import fields, models, api, _",
+      "from odoo.exceptions import UserError",
+      "",
+      "class ${1:SetOpen}Wizard(models.TransientModel):",
+      "",
+      "	_name = '${2:set.open}.wizard'",
+      "",
+      "	$0def process_wizard(self):",
+      "		ids_to_change = self._context.get('active_ids')",
+      "		active_model = self._context.get('active_model')",
+      "		doc_ids = self.env[active_model].browse(ids_to_change)",
+      "		# 1. Run another function",
+      "		# doc_ids.set_open()",
+      "",
+      "		# 2. Modify selected Document",
+      "		# doc_ids.write(",
+      "		#     {",
+      "		#         'state' : 'open'",
+      "		#     }",
+      "		# )",
+      "",
+    ]
+  }
+}

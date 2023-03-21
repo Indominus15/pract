@@ -4,3 +4,15 @@
 2023-03-20 11:57:55.766 [info] Found 0 repositories during activation
 2023-03-20 11:57:55.766 [info] Git repository found, initializing review manager and pr tree view.
 2023-03-20 11:57:55.766 [info] Registering git provider
+2023-03-20 12:26:27.534 [info] Repository file:///home has been opened
+2023-03-20 12:26:27.534 [info] Review> Validate state in progress
+2023-03-20 12:26:27.534 [info] Review> Validating state...
+2023-03-20 12:26:27.535 [warning] No remotes found. The following remotes are missing: origin, upstream
+2023-03-20 12:26:27.535 [info] No GitHub remotes found for folder /home
+2023-03-20 12:26:28.754 [info] Review> Validate state in progress
+2023-03-20 12:26:28.754 [info] Review> Validating state...
+2023-03-20 12:26:28.754 [info] Repo state for file:///home changed.
+2023-03-20 12:26:28.754 [info] Repo file:///home has already been setup.
+2023-03-20 12:26:28.771 [info] Found GitHub remote for folder /home
+2023-03-20 12:26:29.437 [info] Review> no matching pull request metadata found for current branch master
+2023-03-20 12:26:29.437 [info] Review> No matching pull request metadata found on GitHub for current branch master

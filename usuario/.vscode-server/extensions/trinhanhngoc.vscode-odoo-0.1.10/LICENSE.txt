@@ -1,0 +1,6 @@
+Odoo IDE License
+
+I am Trinh Anh Ngoc (atw1990@gmail.com). I am the author of Odoo Framework
+Integration for IDEs (https://odoo-ide.com). This is my first time writing
+a software license. Put simply, this is a proprietary license. You are not
+allowed to copy, distribute, or modify the source code.

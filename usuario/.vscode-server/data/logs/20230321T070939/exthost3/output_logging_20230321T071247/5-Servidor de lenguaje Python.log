@@ -1,0 +1,31 @@
+[Info  - 10:33:58 AM] (30840) Pylance language server 2023.3.20 (pyright 93a4ef87) starting
+[Info  - 10:33:58 AM] (30840) Server root directory: /home/usuario/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist
+[Info  - 10:33:58 AM] (30840) Starting service instance "home"
+[Info  - 10:33:58 AM] (30840) No configuration file found.
+[Info  - 10:33:58 AM] (30840) No pyproject.toml file found.
+[Info  - 10:33:58 AM] (30840) Setting pythonPath for service "home": "/bin/python3"
+[Warn  - 10:33:58 AM] (30840) stubPath /home/typings is not a valid directory.
+[Info  - 10:33:58 AM] (30840) Assuming Python version 3.7
+[Info  - 10:33:58 AM] (30840) Assuming Python platform Linux
+[Info  - 10:33:58 AM] (30840) Searching for source files
+[Info  - 10:33:58 AM] (30840) Found 4395 source files
+[Info  - 10:33:58 AM] (30840) Background analysis(1) root directory: /home/usuario/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist
+[Info  - 10:33:58 AM] (30840) Background analysis(1) started
+[Warn  - 10:34:01 AM] (30840) Workspace indexing has hit its upper limit: 2000 files
+[Info  - 10:47:31 AM] (30840) Starting service instance "<default>"
+[Info  - 10:47:31 AM] (30840) No pyproject.toml file found.
+[Info  - 10:47:31 AM] (30840) Setting pythonPath for service "<default>": "/bin/python3"
+[Warn  - 10:47:31 AM] (30840) stubPath typings is not a valid directory.
+[Info  - 10:47:31 AM] (30840) Assuming Python version 3.7
+[Info  - 10:47:31 AM] (30840) Assuming Python platform Linux
+[Info  - 10:47:31 AM] (30840) Searching for source files
+[Info  - 10:47:31 AM] (30840) No source files found.
+[Info  - 10:47:32 AM] (30840) Background analysis(2) root directory: /home/usuario/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist
+[Info  - 10:47:32 AM] (30840) Background analysis(2) started
+[Info  - 10:47:32 AM] (30840) Indexer background runner(3) root directory: /home/usuario/.vscode-server/extensions/ms-python.vscode-pylance-2023.3.20/dist (index)
+[Info  - 10:47:32 AM] (30840) Indexing(3) started
+[Info  - 10:47:32 AM] (30840) scanned(3) 71 files over 1 exec env
+[Info  - 10:47:33 AM] (30840) indexed(3) 43 files over 1 exec env
+[Info  - 10:47:33 AM] (30840) Indexing finished(3).
+[Warn  - 10:47:35 AM] (30840) Workspace indexing has hit its upper limit: 2000 files
+[Info  - 10:51:24 AM] (30840) [BG(1)] Long operation: getSemanticTokens full at /home/proyecto/version/odoo14/odoo/odoo/service/server.py (2130ms)

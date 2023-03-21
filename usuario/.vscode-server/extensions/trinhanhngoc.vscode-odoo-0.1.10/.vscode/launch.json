@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Odoo extension",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceFolder}/dist/extension.js",
+            "preLaunchTask": "npm: webpack-dev",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "smartStep": true,
+            "sourceMaps": true,
+            "autoAttachChildProcesses": true,
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ]
+        }
+    ]
+}
